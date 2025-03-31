@@ -1,0 +1,64 @@
+max-depth: 3
+---
+indexee: '/howto/2025/3/set-up-jupyter-notebook-for-c.md'
+title: Set up Jupyter Notebook for C
+date-published: 2025-03-18
+date-modified: 2025-03-26
+author:
+  - name: Luke Yoo
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - Jupyter
+  - C
+  - GCC
+---
+indexee: '/howto/2025/3/set-up-jupyter-notebook-for-csharp.md'
+title: Set up Jupyter Notebook for C#/.NET
+date-published: 2025-03-18
+date-modified: 2025-03-26
+author:
+  - name: Luke Yoo
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - Jupyter
+  - C#
+  - .NET
+---
+indexee: '/howto/2025/3/set-up-jupyter-notebook-for-python.md'
+title: Set up Jupyter Notebook for Python
+date-published: 2025-03-18
+date-modified: 2025-03-26
+author:
+  - name: Luke Yoo
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - Jupyter
+  - Python
+---
+indexee: '/howto/2025/3/set-up-jupyter-notebook-for-ruby.md'
+title: Set up Jupyter Notebook for Ruby
+date-published: 2025-03-18
+date-modified: 2025-03-26
+author:
+  - name: Luke Yoo
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - Jupyter
+  - Ruby
+---
+indexee: '/howto/2025/3/set-up-jupyter-notebook-for-rust.md'
+title: Set up Jupyter Notebook for Rust
+date-published: 2025-03-18
+date-modified: 2025-03-26
+author:
+  - name: Luke Yoo
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - Jupyter
+  - Rust
+---

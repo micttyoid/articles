@@ -1,20 +1,20 @@
 ---
-title: Setting up Jupyter Notebook for C
-date_published: 2025-03-18
+title: Set up Jupyter Notebook for Ruby
+date-published: 2025-03-18
+date-modified: 2025-03-26
 author:
   - name: Luke Yoo
   - email: w.lukeyoo@gmail.com
   - website1: https://github.com/micttyoid
 tags:
   - Jupyter
-  - C
-  - GCC
+  - Ruby
 ---
 
-> I heard you liked C and Jupyter so we put them together in your Docker Desktop.
+> I heard you liked Ruby and Jupyter so we put them together in your Docker Desktop.
 > Your mission awaits.
 
-# Setting up Jupyter Notebook for C
+# Set up Jupyter Notebook for Ruby
 
 ## Download Jupyter Polyglot
 
@@ -42,5 +42,5 @@ docker run --name 'jupyter-container' -p 8888:8888 -v ./my_notebook:/notebook -d
 
 Open a web browser and navigate to `http://localhost:8888`.
 
-> Unlock the power of C, and build something extraordinary.
+> Unlock the power of Ruby, and build something extraordinary.
 > This message will self-destruct in 3... 2... 1... 🕶️🚀
