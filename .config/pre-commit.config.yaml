@@ -12,4 +12,5 @@ repos:
   hooks:
   - id: markdownlint-cli2
     name: Markdownlint
+    args: [ '--config', '.config/promenade.markdownlint-cli2.mjs' ]
     files: \.(md|mdown|markdown)$

@@ -1,0 +1,7 @@
+{
+  "name": "articles",
+  "packageManager": "yarn@4.8.1",
+  "devDependencies": {
+    "markdownlint": "^0.37.4"
+  }
+}
