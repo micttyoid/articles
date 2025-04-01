@@ -1,6 +1,9 @@
 ---
 title: Setting up unit test for C#/.NET
-date_published: 2025-03-18
+is-draft: true
+date-published: null
+date-drafted: 2025-03-18
+date-modified: 2025-03-31
 author:
   - name: Luke Yoo
   - email: w.lukeyoo@gmail.com
