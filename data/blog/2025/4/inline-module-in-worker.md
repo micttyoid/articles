@@ -21,7 +21,7 @@ tags:
 | Metric                               | Before | After        |      |
 |--------------------------------------|--------|--------------|------|
 | Size<sup>1</sup> <sup>2</sup>| 1522.93 KiB | 1295.78 KiB  |   14.92% improvement   |
-| Cold Start   | 32ms   | 24ms   | 33.33% improvement|
+| Cold Start   | 32ms   | 24ms   | 25.0% improvement|
 
 **Summary**:
 inline modules with Webpack, when they are tiny and a lot even if
@@ -31,7 +31,7 @@ wrangler does by default.
 the metric demonstrates its build-time optimization efficiency.
 
 <sup>2</sup> For the fairness, it was re-conducted with neither asset
-nor the dummy file, found in the latter topic. With asset / dummy, The
+nor the dummy file, found in the latter topic. With asset / dummy, the
 profiles resulted in 2998.69 KiB to 1295.78 KiB (56.8%).
 Startup 33ms to 24ms (27.3%)
 
