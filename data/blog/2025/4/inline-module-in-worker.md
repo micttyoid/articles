@@ -20,9 +20,8 @@ tags:
 **Results**:
 | Metric                               | Before | After        |      |
 |--------------------------------------|--------|--------------|------|
-| Size<sup>1</sup>| 2998.69 KiB | 1295.78 KiB  |   56.8% improvement   |
-| Cold Start   | 33ms   | 24ms   | 27.3% improvement|
-
+| Size<sup>1</sup> <sup>2</sup>| 1522.93 KiB | 1295.78 KiB  |   14.92% improvement   |
+| Cold Start   | 32ms   | 24ms   | 33.33% improvement|
 
 **Summary**:
 inline modules with Webpack, when they are tiny and a lot even if
@@ -30,6 +29,11 @@ wrangler does by default.
 
 <sup>1</sup> Although the application is SSR (no client-side bundle),
 the metric demonstrates its build-time optimization efficiency.
+
+<sup>2</sup> For the fairness, it was re-conducted with neither asset
+nor the dummy file, found in the latter topic. With asset / dummy, The
+profiles resulted in 2998.69 KiB to 1295.78 KiB (56.8%).
+Startup 33ms to 24ms (27.3%)
 
 ## Table of Contents
 
