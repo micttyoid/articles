@@ -216,14 +216,18 @@ async function highlight_prism(code, lang) {
             await import(`prismjs/components/prism-${lang}.min.js`)
         } catch (e) {
             logger.warn(
-                `Prism for '${lang}' not found. Fallback to txt: ${e}`
+                `Prism '${lang}' is not found. Fallback to text: ${e}`
             )
             return code
         }
     }
     return prism.highlight(code, prism.languages[lang], lang)
 }
+// Forbidden JS snake casing is my only preference ...
 ```
+
+TODO: more detail, possibly re-conduct with generic source code
+if time's allowed
 
 ## See also
 
