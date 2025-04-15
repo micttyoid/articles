@@ -174,7 +174,7 @@ var r2 = {
 
 **Summary**: Modules of size under 5KB in bulk <sup>5</sup>
 
-**Count**: 298 sub modules <sup>6</sup>
+**Population**: 298 sub modules <sup>6</sup> from PrismJS
 
 **Examples**:
 
@@ -192,9 +192,9 @@ var r2 = {
 
 ## 3. Methodology and Environment
 
-- **Wrangler**: v[TODO]
-- **Webpack**: v[TODO]
-- **Node.js**: v[TODO]
-- **Dependencies**:  
-  - [TODO]
-- **Cloudflare Runtime**: [TODO]
+**Dependencies**
+
+- babel-loader: v10.0.0
+- webpack: v5.98.0 
+- webpack-node-externals: v3.0.0
+- wrangler: v4.10.0
