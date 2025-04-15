@@ -201,6 +201,31 @@ var r2 = {
 - webpack-node-externals: v3.0.0
 - wrangler: v4.10.0
 
+**Used**
+
+```js
+var prism // global
+//let prism // module
+async function highlight_prism(code, lang) {
+	//let prism // single
+    if (!prism) {
+        prism = await import('prismjs')
+    }
+
+    if (!prism.languages[lang]) {
+        try {
+            await import(`prismjs/components/prism-${lang}.min.js`)
+        } catch (e) {
+            logger.warn(
+                `Prism for '${lang}' not found. Fallback to txt: ${e}`
+            )
+            return code
+        }
+    }
+    return prism.highlight(code, prism.languages[lang], lang)
+}
+```
+
 ## 4. See also
 
 TODO
