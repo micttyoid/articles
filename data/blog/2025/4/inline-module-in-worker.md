@@ -17,15 +17,22 @@ tags:
 
 # Optimizing Cloudflare Workers: Inline Small Modules for Leaner Webpack Bundles
 
-**Results**:
+**Abstractoid**
+
+Measurements of a 298-module web worker showed Webpack's inline bundling yielded 14.92% smaller payloads and 8ms faster starts versus Wrangler's default inline processing. This demonstrates compile-time optimization's value for dependency-heavy edge workers.
+
+**Heuristic**
+
+Inline modules when:
+- Worker is bundled by Webpack to be deployed by Wrangler of Cloudflare
+- Application carries 100 modules or more
+- Modules in size of ~5KB
+
+**Numbers**
 | Metric                               | Before | After        |      |
 |--------------------------------------|--------|--------------|------|
 | Size<sup>1</sup> <sup>2</sup>| 1522.93 KiB | 1295.78 KiB  |   14.92% improvement   |
 | Cold Start   | 32ms   | 24ms   | 25.0% improvement|
-
-**Summary**:
-inline modules with Webpack, when they are tiny and a lot even if
-wrangler does by default.
 
 <sup>1</sup> Although the application is SSR (no client-side bundle),
 the metric demonstrates its build-time optimization efficiency.
