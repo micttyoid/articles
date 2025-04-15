@@ -13,6 +13,8 @@ tags:
   - Optimization
   - Optimisation
   - JavaScript
+  - Webpack
+  - Inline
 ---
 
 # Optimizing Cloudflare Workers: Inline Small Modules for Leaner Webpack Bundles
@@ -51,7 +53,7 @@ Startup 33ms to 24ms (27.3%)
 1. [Bundle internal](#bundle-internal)
 2. [Module group](#module-group)
 3. [Methodology and Environment](#methodology-and-environment)
-3. [See also](#see-also)
+4. [See also](#see-also)
 
 
 ## 1. Bundle internal
@@ -176,7 +178,7 @@ var r2 = {
 
 **Population**: 298 sub modules <sup>6</sup> from PrismJS
 
-**Examples**:
+**Example**:
 
 | sub module              | Size        | Note     |
 |-------------------------|-------------|----------|
@@ -185,7 +187,7 @@ var r2 = {
 | prism-regex.min.js      | 1.26KB      |          |
 | prism-rust.min.js       | 2.41KB      |          |
 
-<sup>5</sup> Sub modules of 298 Entries, Mean 2.50 KB, Median 1.41KB, Range from 0.14KB to 32.72 KB, Total Size 744.44KB(1024 byte).
+<sup>5</sup> Sub modules of 298 entries, Mean 2.50 KB, Median 1.41KB, Range from 0.14KB to 32.72 KB, Total Size 744.44KB(1024 byte).
 
 <sup>6</sup> https://codeberg.org/mictty/articles/raw/branch/main/static/reference/prism-module-sizes_2025-04-10.csv
 
@@ -198,3 +200,7 @@ var r2 = {
 - webpack: v5.98.0 
 - webpack-node-externals: v3.0.0
 - wrangler: v4.10.0
+
+## 4. See also
+
+TODO
