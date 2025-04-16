@@ -2,7 +2,7 @@
 title: 'Optimizing Cloudflare Workers: Inline Small Modules for Leaner Webpack Bundles'
 date-published: 2025-04-16
 date-drafted: 2025-04-10
-date-modified: null
+date-modified: 2025-04-16
 author:
   - name: Luke Yoo
   - email: w.lukeyoo@gmail.com
@@ -198,7 +198,7 @@ from 0.14KB to 32.72 KB, Total Size 744.44KB(K in 1024 byte).
 
 ## Methodology and Environment
 
-**Relavant dependencies of the application**
+**Relevant dependencies of the application**
 
 - babel-loader: v10.0.0
 - webpack: v5.98.0 
