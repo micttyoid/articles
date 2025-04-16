@@ -1,6 +1,6 @@
 ---
 title: 'Optimizing Cloudflare Workers: Inline Small Modules for Leaner Webpack Bundles'
-date-published: null
+date-published: 2025-04-16
 date-drafted: 2025-04-10
 date-modified: null
 author:
@@ -25,7 +25,10 @@ tags:
 
 **Abstractoid**
 
-Measurements of a 298-module web worker showed Webpack's inline bundling yielded 14.92% smaller payloads and 8ms faster starts versus Wrangler's default inline processing. This demonstrates compile-time optimization's value for dependency-heavy edge workers.
+Measurements of a 298-module web worker showed Webpack's inline bundling
+yielded 14.92% smaller payloads and 8ms faster starts versus Wrangler's
+default inline processing. This demonstrates compile-time optimization's
+value for dependency-heavy edge workers.
 
 **Heuristic**
 
@@ -53,7 +56,6 @@ Startup 33ms to 24ms (27.3%)
 - [Bundle internal](#bundle-internal)
 - [Module group](#module-group)
 - [Methodology and Environment](#methodology-and-environment)
-- [See also](#see-also)
 
 ## Bundle internal
 
@@ -156,7 +158,9 @@ var r2 = {
     /* ... */
 }, 8624: () => {
   !function(e3) {
-    for (var t2 = "/\\*(?:[^*/]|\\*(?!/)|/(?!\\*)|<self>)*\\*/", n2 = 0; n2 < 2; n2++) t2 = t2.replace(/<self>/g, function() {
+    for (var t2 = "/\\*(?:[^*/]|\\*(?!/)|/(?!\\*)|<self>)*\\*/", 
+        n2 = 0; n2 < 2; n2++) 
+      t2 = t2.replace(/<self>/g, function() {
       return t2;
     });
     t2 = t2.replace(/<self>/g, function() {
@@ -171,7 +175,7 @@ var r2 = {
 
 ## Module group
 
-> many and tiny
+> Many & Tiny
 
 **Summary**: Modules of size under 5KB in bulk <sup>5</sup>
 
@@ -186,19 +190,29 @@ var r2 = {
 | prism-regex.min.js      | 1.26KB      |          |
 | prism-rust.min.js       | 2.41KB      |          |
 
-<sup>5</sup> Sub modules of 298 entries, Mean 2.50 KB, Median 1.41KB, Range from 0.14KB to 32.72 KB, Total Size 744.44KB(K in 1024 byte).
+<sup>5</sup> Sub modules of 298 entries, Mean 2.50 KB, Median 1.41KB, Range 
+from 0.14KB to 32.72 KB, Total Size 744.44KB(K in 1024 byte).
 
 <sup>6</sup> https://codeberg.org/mictty/articles/raw/branch/main/static/reference/prism-module-sizes_2025-04-10.csv
 
 
 ## Methodology and Environment
 
-**Dependencies**
+**Relavant dependencies of the application**
 
 - babel-loader: v10.0.0
 - webpack: v5.98.0 
 - webpack-node-externals: v3.0.0
 - wrangler: v4.10.0
+
+**Profile and scenario**
+
+The startup time were measured via Wrangler's default profiler, on the 
+application, Promenade (v0.1.3).
+
+When its main routine routes to `/blog/*`, an API call is made. On success,
+the data is parsed and the following method `highlight_prism` is called 
+if needed.
 
 **Used method**
 
@@ -225,10 +239,3 @@ async function highlight_prism(code, lang) {
 }
 // Forbidden JS snake casing is my only preference ...
 ```
-
-TODO: more detail, possibly re-conduct with generic source code
-if time's allowed
-
-## See also
-
-TODO
