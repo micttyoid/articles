@@ -205,16 +205,16 @@ from 0.14KB to 32.72 KB, Total Size 744.44KB(K in 1024 byte).
 - webpack-node-externals: v3.0.0
 - wrangler: v4.10.0
 
-**Profile and scenario**
+**Profile**
 
 The startup time were measured via Wrangler's default profiler, on the 
 application, Promenade (v0.1.3).
 
+**Used method**
+
 When its main routine routes to `/blog/*`, an API call is made. On success,
 the data is parsed and the following method `highlight_prism` is called 
 if needed.
-
-**Used method**
 
 ```js
 var prism // global
