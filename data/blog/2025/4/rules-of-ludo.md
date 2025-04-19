@@ -26,7 +26,7 @@ the game rules.
 - [_The Rule of Six_](#the-rule-of-six)
 - [Pair](#pair)
 - [Discard of roll](#discard-of-roll)
-- [Setback](#setback)
+- [Capture](#capture)
 
 ## Forwardability
 
@@ -121,11 +121,7 @@ _M_ is the die number divided by two.
 If neither forwardable pawn on square nor forwardable Pair given to a player 
 and the Base is empty, the turn is terminated.
 
-## Setback
+## Capture
 
-A setback is determined at an instance of capture by satisfying all of
-the following conditions:
-
-1. The target pawn is not on a Safe.
-
-2. The target pawn is not the part of a Pair(Jota)
+If a pawn or a Pair is forwarded to a non-safe square where an opponent's
+pawn presents, the opponent's pawn is sent back to its Base.
