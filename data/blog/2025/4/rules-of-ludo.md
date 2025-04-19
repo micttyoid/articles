@@ -30,6 +30,12 @@ the game rules.
 
 ## Forwardability
 
+The forwardability is a state of pawn on square or a Pair, determined per roll
+of dice. This heavily affects the dynamic of Ludo by such as moving a pawn, 
+splitting a pair, or preventing one from entering its destination.
+
+The majority of the rules is explained in terms of forwardability.
+
 The forwardability is defined by following:
 
 1. If the value of die is more than the number of squares left to a pawn on
@@ -46,10 +52,10 @@ The forwardability is defined by following:
    owned by the player and the even value of die, whose half is more than 
    _N_ - 1, is made, the Pair is **not forwardable**.
 
-5. Any other pawn(s) on square or Pair that are under none of the 
-   conditions of the past statements, the pawn or Pair is **forwardable**.
+5. Any other pawn(s) on square or a Pair(s) that are under none of the 
+   conditions of the past statements, the pawn or the Pair is **forwardable**.
 
-**Example: _Rule of Six_**
+**Example: _The Rule of Six_**
 
 If a player makes six, a second time in its turn, and all player's pawn(s) 
 on square and Pair(s) cannot forward since the number of squares before 
