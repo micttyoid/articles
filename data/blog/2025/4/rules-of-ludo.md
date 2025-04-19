@@ -18,27 +18,44 @@ tags:
 Unlike chess or cricket, Ludo has no official rulebook. This document defines 
 the game rules.
 
+## Table of Content
+
+- [Forwardability](#forwardability)  
+- [_The Rule of Six_](#the-rule-of-six)
+- [Setup](#setup)
+- [Pair](#pair)
+- [Discard of roll](#discard-of-roll)
+- [Setback](#setback)
+
 ## Forwardability
 
 The forwardability is defined by following:
 
 1. If the value of die is more than the number of squares left to a pawn on
-square before its Destination, the pawn is **not forwardable**.
+   square before its Destination, the pawn is **not forwardable**.
 
 2. If the value of die is even and the half is more than the number of squares
-   left to a Doubled before its Destination, the Doubled is **not forwardable**.
+   left to a Pair before its Destination, the Pair is **not forwardable**.
 
-3. Any other pawn(s) on square or Doubled that are none of the conditions of
-   the statement 1 and the statement 2, the pawn or Doubled is **forwardable**.
+3. If an opponent's blockade presents in _N_ squares, front of a pawn
+   on square, owned by the player and the value of die is more than 
+   _N_ - 1, the pawn is **not forwardable**.
+
+4. If an opponent's blockade presents in _N_ squares, front of a Pair, 
+   owned by the player and the even value of die, whose half is more than 
+   _N_ - 1, is made, the Pair is **not forwardable**.
+
+5. Any other pawn(s) on square or Pair that are under none of the 
+   conditions of the past statements, the pawn or Pair is **forwardable**.
 
 **Example: _Rule of Six_**
 
 If a player makes six, a second time in its turn, and all player's pawn(s) 
-on square and Doubled(s) cannot forward since the number of squares before 
+on square and Pair(s) cannot forward since the number of squares before 
 its Destination is less than six for each pawn on square and the number
-of square before its Destination is less than three for each Doubled, and the 
+of square before its Destination is less than three for each Pair, and the 
 player's Base is  empty, **none** of the players pawn(s) on square and
-Doubled(s) is **forwardable**. Therefore, the player takes the last roll.
+Pair(s) is **forwardable**. Therefore, the player takes the last roll.
 
 ## The Rule of Six
 
@@ -48,43 +65,59 @@ the player has following options:
 1. If an idle pawn exists in the player's Base, the player may enter it and
    take another roll.
 
-2. Forward one of the player's forwardable pawn(s) on square by six and take
-   another roll.
+2. Forward one of the player's forwardable pawn(s) on square<sup>1</sup> by
+   six and take another roll.
 
-3. Forward one of the player's forwardable Doubled(s) by three and take 
+3. Forward one of the player's forwardable Pair(s) by three and take 
    another roll.
 
 4. If the player's Base is empty and the player has neither forwardable pawn,
-   nor forwardable Doubled, the player takes another roll.
+   nor forwardable Pair, the player takes another roll.
 
 If a player makes a die of six, **a third time** in its turn,
 the turn is terminated and the next player takes a turn.
 
-## Doubled
+<sup>1</sup> This includes a pawn who is part of a pair since the split is 
+allowed.
 
-**Moves**
+## Pair
 
-If a roll of number **six** is made, in a player's turn, who owns a 
-Doubled(Jota), this leads to one of the followings:
+**Formation**
 
-1. If the player has at least one pawn in its base, the pawn can enter.
-2. The doubled forwards by three squares.
+When a player's pawn, after move, shares the same square with another pawn of
+the player, the two pawns form a pair.
 
-If a roll of **even** number, **other than six**, is made, in a player's turn,
-who owns a  Doubled(Jota), the doubled forwards by _N_ squares, where _N_ is
-the die number divided by two.
+**Blockade**
 
-If a roll of **odd** number is made, in a player's turn, who owns a 
-Doubled(Jota), this leads to one of the followings:
+A pair acts as a blockade and affects the forwardability of opponent's pawn(s)
+behind.
 
-1. If the player has a pawn on any square, that isn't the part of Doubled,
-   the pawn makes move accordingly.
+**Split: withdrawal of Blockade**
 
-2. Proceed turn to the next player(waste).
+If a roll makes a Pair not forwardable, but a pawn of the Pair is forwardable,
+the player can forward a pawn of the pair and they no longer form
+a pair.
 
-**There is no "Trio"**
+**Split by force**
 
-TODO
+1. (By odd roll) If an odd roll is made where a pawn of the Pair is forwardable 
+    and the player's Base is empty, the Pair **must split** by forwarding 
+    one of the two pawns.
+
+2. (By forwardability) If a roll makes a Pair not forwardable, but a pawn
+    of the Pair is forwardable and the player's Base is empty, the Pair 
+    **must split** by forwarding one of the two pawns.
+
+**Forward as a Pair**
+
+If a roll of **even** number, **other than six**, in a player's turn, who owns 
+a forwardable Pair(Jota), is made, the Pair can forward by _M_ squares, where 
+_M_ is the die number divided by two.
+
+## Discard of roll
+
+If neither forwardable pawn on square nor forwardable Pair given to a player 
+and the Base is empty, the turn is terminated.
 
 ## Setback
 
@@ -93,4 +126,4 @@ the following conditions:
 
 1. The target pawn is not on a Safe.
 
-2. The target pawn is not the part of a Doubled(Jota)
+2. The target pawn is not the part of a Pair(Jota)
