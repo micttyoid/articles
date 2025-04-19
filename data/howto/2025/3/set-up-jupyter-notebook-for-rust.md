@@ -11,9 +11,6 @@ tags:
   - Rust
 ---
 
-> I heard you liked Rust and Jupyter so we put them together in your Docker Desktop.
-> Your mission awaits.
-
 # Set up Jupyter Notebook for Rust
 
 ## Download Jupyter Polyglot
@@ -41,6 +38,3 @@ docker run --name 'jupyter-container' -p 8888:8888 -v ./my_notebook:/notebook -d
 ## Access Jupyter in Your Browser
 
 Open a web browser and navigate to `http://localhost:8888`.
-
-> Unlock the power of Rust, and build something extraordinary.
-> This message will self-destruct in 3... 2... 1... 🕶️🚀
