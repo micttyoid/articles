@@ -18,6 +18,8 @@ tags:
 Unlike chess or cricket, Ludo has no official rulebook. This document defines 
 the game rules.
 
+![Ludo Board](https://codeberg.org/mictty/articles/raw/branch/main/static/images/2025/ludo-board.jpg)
+
 ## Table of Content
 
 - [Forwardability](#forwardability)  
