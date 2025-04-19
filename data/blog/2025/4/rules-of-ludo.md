@@ -61,8 +61,8 @@ Pair(s) is **forwardable**. Therefore, the player takes the last roll.
 
 ## The Rule of Six
 
-If a player makes a die of six, **a first or a second time** in its turn,
-the player has following options:
+If a player makes a die of six, **the first, the second, or the third time** 
+in its turn, the player has following options:
 
 1. If an idle pawn exists in the player's Base, the player may enter it and
    take another roll.
@@ -76,8 +76,8 @@ the player has following options:
 4. If the player's Base is empty and the player has neither forwardable pawn,
    nor forwardable Pair, the player takes another roll.
 
-If a player makes a die of six, **a third time** in its turn,
-the turn is terminated and the next player takes a turn.
+If a player makes **the four consecutive sixes** in its turn, at the last
+roll, the turn is terminated and the next player takes a turn.
 
 <sup>1</sup> This includes a pawn who is part of a pair since the split is 
 allowed.
