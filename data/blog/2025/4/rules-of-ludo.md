@@ -13,12 +13,17 @@ tags:
   - 'Game Rule'
 ---
 
+# Rules of Ludo
+
+Unlike chess or cricket, Ludo has no official rulebook. This document defines 
+the game rules.
+
 ## Forwardability
 
 The forwardability is defined by following:
 
-1. If the value of die is more than the number of squares left to a pawn on square
-before its Destination, the pawn is **not forwardable**.
+1. If the value of die is more than the number of squares left to a pawn on
+square before its Destination, the pawn is **not forwardable**.
 
 2. If the value of die is even and the half is more than the number of squares
    left to a Doubled before its Destination, the Doubled is **not forwardable**.
