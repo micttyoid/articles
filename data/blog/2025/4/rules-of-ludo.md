@@ -24,7 +24,6 @@ the game rules.
 
 - [Forwardability](#forwardability)  
 - [_The Rule of Six_](#the-rule-of-six)
-- [Setup](#setup)
 - [Pair](#pair)
 - [Discard of roll](#discard-of-roll)
 - [Setback](#setback)
