@@ -102,13 +102,15 @@ a pair.
 
 **Split by force**
 
-1. (By odd roll) If an odd roll is made where a pawn of the Pair is forwardable 
-    and the player's Base is empty, the Pair **must split** by forwarding 
-    one of the two pawns.
+1. (By odd roll) If an odd roll is made where a pawn of the Pair is forwardable,
+    the player's Base is empty, and other forwardable option is found,
+    the Pair **must split** by forwarding one of the two pawns if no other 
+    forwardable option found.
 
 2. (By forwardability) If a roll makes a Pair not forwardable, but a pawn
-    of the Pair is forwardable and the player's Base is empty, the Pair 
-    **must split** by forwarding one of the two pawns.
+    of the Pair is forwardable, the player's Base is empty, and the no other
+    forwardable option is found, the Pair **must split** by forwarding one of 
+    the two pawns.
 
 **Forward as a Pair**
 
