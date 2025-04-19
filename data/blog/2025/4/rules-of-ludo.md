@@ -30,11 +30,13 @@ the game rules.
 
 ## Forwardability
 
-The forwardability is a state of pawn on square or a Pair, determined per roll
-of dice. This heavily affects the dynamic of Ludo by such as moving a pawn, 
-splitting a pair, or preventing one from entering its destination.
+The forwardability is the state of pawn on square or a Pair, determined upon
+a roll of dice. This heavily affects the dynamic of Ludo by such as moving 
+a pawn, splitting a Pair, or preventing one from entering its destination.
 
-The majority of the rules is explained in terms of forwardability.
+In other words, the majority of the rules is explained in terms of
+forwardability and understanding the driving force of Ludo is important to
+fully appreciate the game of 1500-year history.
 
 The forwardability is defined by following:
 
