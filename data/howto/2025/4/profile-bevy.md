@@ -1,6 +1,5 @@
 ---
 title: Profile Bevy
-is-draft: true
 date-published: 2025-04-21
 date-drafted: 2025-04-21
 date-modified: null
