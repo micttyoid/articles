@@ -17,7 +17,7 @@ tags:
 
 Using macro `SystemParam` is a designated way to group parameters.
 
-## How does this simplify?
+## What does it do?
 
 Suppose a function `setup`:
 
@@ -84,7 +84,7 @@ With `SetupParams`:
 use bevy::{
     ecs::system::SystemParam,    
     prelude::*,
-}
+};
 
 #[derive(SystemParam)]
 pub struct SetupParams<'w, 's> {
