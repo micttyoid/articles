@@ -127,7 +127,7 @@ fn setup_walls(params: SetupParams) {
 
 **Why don't you use it in [Flappy](https://github.com/micttyoid/flappy)**?
 
-[Flappy](https://github.com/micttyoid/flappy) is a beginner-friendly codebase. I don't want to overwhelm the readers.
+[Flappy](https://github.com/micttyoid/flappy) is a beginner-friendly codebase. Adding more, may overwhelm the readers.
 
 ## See also
 
