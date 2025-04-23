@@ -48,4 +48,4 @@
 
 ## Source
 
-[Tex Exchange - Should i \mathrm the d in my Integrals](https://tex.stackexchange.com/questions/60545/should-i-mathrm-the-d-in-my-integrals)
+[tex.stackexchange - Should i \mathrm the d in my Integrals](https://tex.stackexchange.com/questions/60545/should-i-mathrm-the-d-in-my-integrals)
