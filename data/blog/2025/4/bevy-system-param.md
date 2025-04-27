@@ -2,7 +2,7 @@
 title: 'SystemParam in Bevy'
 date-published: 2025-04-22
 date-drafted: 2025-04-22
-date-modified: null
+date-modified: 2025-04-27
 author:
   - name: Luke Yoo
   - email: w.lukeyoo@gmail.com
@@ -17,118 +17,171 @@ tags:
 
 Using macro `SystemParam` is a designated way to group parameters.
 
-## What does it do?
+## Three sections of the code
 
-Suppose a function `setup`:
+1. [Group by SystemParam](#1-group-by-systemparam)
+2. [Closure above](#2-closure-above)
+3. [Small functions](#3-small-functions)
+
+The reading order is however from Section 2(Closure Above)
+
+## 2. Closure above
+
+Suppose a lazy-ass human being, who wants to fully utilize Bevy's 
+parameter injection, which bunch of small functions.
+
+So you want something like this:
 
 ```rust
-fn setup(
-    mut commands: Commands,
-    mut materials: ResMut<Assets<StandardMaterial>>,    
-    mut meshes: ResMut<Assets<Mesh>>,
-) {
+// ... Just a thought ...
+fn setup(bunch: Bunch) {
     setup_plane(commands, meshes, materials);
     setup_walls(commands, meshes);
-
-    // more stuffs...
-}
-```
-
-Given `SetupParams`, defined by the macro:
-
-```rust
-fn setup(params: SetupParams) {
-    setup_plane(params);
-    setup_walls(params);
-     // more stuffs...
-}
-```
-
-## Example
-
-Before:
-
-```rust
-use bevy::prelude::*;
-
-pub fn setup(
-    mut commands: Commands,
-    mut materials: ResMut<Assets<StandardMaterial>>,    
-    mut meshes: ResMut<Assets<Mesh>>,
-) {
-    setup_plane(commands, meshes, materials);
-    setup_walls(commands, meshes);
-
     // More stuffs...
 }
+```
+
+This keeps the small functions being explicit. Importing this gets handy when
+you organize multiple plugins separately from the collection of functions.
+
+Suppose that the setup function is mostly designated to use 
+three parameters: `commands`, `meshes`, and `materials`.
+
+Then the function looks like this:
+
+```rust
+pub fn setup(with_cmm: WithCmm) {
+    with_cmm.run(|commands, meshes, materials| {
+        setup_ground(commands, meshes, materials);
+        setup_walls(commands, meshes);
+
+        // More stuff...
+    });
+    // or maybe more as you extend
+}
+```
+
+## 1. Group by SystemParam
+
+Pretty straightforward. Use `SystemParam` for what are to be injected.
+
+```rust
+#[derive(SystemParam)]
+pub struct WithCmm<'w, 's> {
+    commands: Commands<'w, 's>,
+    meshes: ResMut<'w, Assets<Mesh>>,
+    materials: ResMut<'w, Assets<StandardMaterial>>,
+}
+
+// Closure interaction by FnOnce
+impl<'w, 's> WithCmm<'w, 's> {
+    pub fn run<F>(self, func: F)
+    where
+        F: FnOnce(
+            &mut Commands<'w, 's>,
+            &mut ResMut<'w, Assets<Mesh>>,
+            &mut ResMut<'w, Assets<StandardMaterial>>,
+        ),
+    {
+        let WithCmm {
+            mut commands,
+            mut meshes,
+            mut materials,
+        } = self;
+
+        func(&mut commands, &mut meshes, &mut materials);
+    }
+}
+```
+
+## 3. Small functions
+
+```rust
+// ... Mesh & Material combo functions ...
 
 fn setup_plane(
-    mut commands: Commands,
-    mut materials: ResMut<Assets<StandardMaterial>>,    
-    mut meshes: ResMut<Assets<Mesh>>,
+    commands: &mut Commands,
+    meshes: &mut ResMut<Assets<Mesh>>,
+    materials: &mut ResMut<Assets<StandardMaterial>>,
 ) {
-     // Mutably work on commands, materials, and meshes
+    // ... //
 }
 
 fn setup_walls(
-    mut commands: Commands,
-    mut meshes: ResMut<Assets<Mesh>>,
+    commands: &mut Commands,
+    meshes: &mut ResMut<Assets<Mesh>>,
 ) {
-    // Mutably work on commands and meshes
+    // ... //
 }
+
+// More as you extend ... setup_foo, setup_bar, ...
 ```
 
-With `SetupParams`:
+## Complete example
 
 ```rust
 use bevy::{
-    ecs::system::SystemParam,    
+    ecs::system::SystemParam,
     prelude::*,
 };
 
+// 1. To-be-injected, To-be-scheduled SystemParam
+
 #[derive(SystemParam)]
-pub struct SetupParams<'w, 's> {
-    pub commands: Commands<'w, 's>,
-    pub materials: ResMut<'w, Assets<StandardMaterial>>,    
-    pub meshes: ResMut<'w, Assets<Mesh>>,
+pub struct WithCmm<'w, 's> {
+    commands: Commands<'w, 's>,
+    meshes: ResMut<'w, Assets<Mesh>>,
+    materials: ResMut<'w, Assets<StandardMaterial>>,
 }
 
-pub fn setup(params: SetupParams) {
-    setup_plane(params);
-    setup_walls(params);
+impl<'w, 's> WithCmm<'w, 's> {
+    pub fn run<F>(self, func: F)
+    where
+        F: FnOnce(
+            &mut Commands<'w, 's>,
+            &mut ResMut<'w, Assets<Mesh>>,
+            &mut ResMut<'w, Assets<StandardMaterial>>,
+        ),
+    {
+        let WithCmm {
+            mut commands,
+            mut meshes,
+            mut materials,
+        } = self;
 
-     // More stuffs...
+        func(&mut commands, &mut meshes, &mut materials);
+    }
 }
 
-fn setup_plane(
-    SetupParams {
-        mut commands,
-        mut materials,        
-        mut meshes,
-    }: SetupParams,
+// 2. Closure to be given to plugin
+
+pub fn setup(with_cmm: WithCmm) {
+    with_cmm.run(|commands, meshes, materials| {
+        setup_ground(commands, meshes, materials);
+        setup_walls(commands, meshes, materials);
+    });
+}
+
+// 3. Small functions
+
+fn setup_ground(
+    commands: &mut Commands,
+    meshes: &mut ResMut<Assets<Mesh>>,
+    materials: &mut ResMut<Assets<StandardMaterial>>,
 ) {
-    // Mutably work on commands, materials, and meshes
+    // ...
 }
 
-fn setup_walls(params: SetupParams) {
-
-    // Destructure 
-    let SetupParams {
-        mut commands, 
-        mut meshes,
-        ..
-    } = params;
-
-    // Use the mesh resource explicitly ...
+fn setup_walls(
+    commands: &mut Commands,
+    meshes: &mut ResMut<Assets<Mesh>>,
+) {
+    // ...
 }
 ```
-
-## Note
-
-**Why don't you use it in [Flappy](https://github.com/micttyoid/flappy)**?
-
-[Flappy](https://github.com/micttyoid/flappy) is a beginner-friendly codebase. Adding more, may overwhelm the readers.
 
 ## See also
 
 [SystemParam](https://docs.rs/bevy/latest/bevy/ecs/system/trait.SystemParam.html)
+
+[FnOnce](https://doc.rust-lang.org/std/ops/trait.FnOnce.html)
