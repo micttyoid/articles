@@ -27,10 +27,7 @@ The reading order is however from Section 2(Closure Above)
 
 ## 2. Closure above
 
-Suppose a lazy-ass human being, who wants to fully utilize Bevy's 
-parameter injection, which bunch of small functions.
-
-So you want something like this:
+Imagine something like this:
 
 ```rust
 // ... Just a thought ...
@@ -50,13 +47,17 @@ three parameters: `commands`, `meshes`, and `materials`.
 Then the function looks like this:
 
 ```rust
+// The only pub in this file
+
 pub fn setup(with_cmm: WithCmm) {
     with_cmm.run(|commands, meshes, materials| {
         setup_ground(commands, meshes, materials);
         setup_walls(commands, meshes);
 
         // More stuff...
+
     });
+
     // or maybe more as you extend
 }
 ```
@@ -74,6 +75,7 @@ pub struct WithCmm<'w, 's> {
 }
 
 // Closure interaction by FnOnce
+
 impl<'w, 's> WithCmm<'w, 's> {
     pub fn run<F>(self, func: F)
     where
