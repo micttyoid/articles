@@ -1,6 +1,6 @@
 # Test data: Latex - Integrals in comparison
 
-## By sytax
+## By syntax
 
 ```latex
 \documentclass{article}
