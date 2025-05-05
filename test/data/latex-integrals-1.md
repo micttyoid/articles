@@ -3,6 +3,8 @@
 ## By syntax
 
 ```latex
+% Define command "diff". Renew it because an engine can cache
+\renewcommand\diff{\mathop{}\!\mathrm{d}}
 \biggl(
 \int_{-\infty}^\infty e^{-x^2}\diff x\biggr)^2
 =\int_{-\infty}^\infty\int_{-\infty}^\infty e^{-(x^2+y^2)}\diff x\diff y \\
@@ -23,6 +25,8 @@ V(\mathbf{x}) = -\int_{\mathbf{R}^3}
 ## By render
 
 ```[latex]
+% Define command "diff". Renew it because an engine can cache
+\renewcommand\diff{\mathop{}\!\mathrm{d}}
 \biggl(
 \int_{-\infty}^\infty e^{-x^2}\diff x\biggr)^2
 =\int_{-\infty}^\infty\int_{-\infty}^\infty e^{-(x^2+y^2)}\diff x\diff y \\
