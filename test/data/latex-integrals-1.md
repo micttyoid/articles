@@ -8,8 +8,8 @@
 \biggl(
 \int_{-\infty}^\infty e^{-x^2}\diff x\biggr)^2
 = \int_{-\infty}^\infty\int_{-\infty}^\infty e^{-(x^2+y^2)}\diff x\diff y \\
-= \int_0^{2\pi}\int_0^\infty e^{-r^2}r\diff r\diff \theta                  \\
-= \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr)\diff \theta\\
+= \int_0^{2\pi}\int_0^\infty e^{-r^2}r \diff r \diff \theta                  \\
+= \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr) \diff \theta\\
 = \pi                                          \tag*{q.e.d.} \\
 ```
 
@@ -32,9 +32,9 @@ V(\mathbf{x}) = -\int_{\mathbf{R}^3}
 \biggl(
 \int_{-\infty}^\infty e^{-x^2}\diff x\biggr)^2
 = \int_{-\infty}^\infty\int_{-\infty}^\infty e^{-(x^2+y^2)}\diff x\diff y \\
-= \int_0^{2\pi}\int_0^\infty e^{-r^2}r\diff r\diff \theta                  \\
-= \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr)\diff \theta\\
-= \pi      
+= \int_0^{2\pi}\int_0^\infty e^{-r^2}r \diff r \diff \theta                  \\
+= \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr) \diff \theta\\
+= \pi                                          \tag*{q.e.d.} \\
 ```
 
 ```[latex]
