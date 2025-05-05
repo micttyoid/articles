@@ -14,6 +14,8 @@
 ```
 
 ```latex
+% Define command "diff"
+\newcommand\diff{\mathop{}\!\mathrm{d}}
 % Define command "Diff" with an argument
 \renewcommand\Diff[1]{\mathop{}\!\mathrm{d^#1}}
 
@@ -36,6 +38,8 @@ V(\mathbf{x}) = -\int_{\mathbf{R}^3}
 ```
 
 ```[latex]
+% Define command "diff"
+\newcommand\diff{\mathop{}\!\mathrm{d}}
 % Define command "Diff" with an argument
 \renewcommand\Diff[1]{\mathop{}\!\mathrm{d^#1}}
 
