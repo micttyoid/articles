@@ -12,7 +12,7 @@
 = \int_0^{2\pi}\int_0^\infty e^{-r^2}r \diff r \diff \theta \\
 \newcommand\diff{\mathop{}\!\mathrm{d}}
 = \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr) \diff \theta \\
-= \tag{q.e.d.} \pi
+= \pi \tag{q.e.d.} 
 ```
 
 ```latex
@@ -38,7 +38,7 @@ V(\mathbf{x}) = -\int_{\mathbf{R}^3}
 = \int_0^{2\pi}\int_0^\infty e^{-r^2}r \diff r \diff \theta \\
 \newcommand\diff{\mathop{}\!\mathrm{d}}
 = \int_0^{2\pi}\biggl(-{e^{-r^2}\over2}\bigg\vert_{r=0}^{r=\infty}\,\biggr) \diff \theta \\
-= \tag{q.e.d.} \pi
+= \pi \tag{q.e.d.} 
 ```
 
 ```[latex]
