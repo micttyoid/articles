@@ -3,129 +3,41 @@
 ## By syntax
 
 ```latex
-\documentclass{article}
-\title{Integrals, Sums and Limits}
-\author{Overleaf}
-\date{}
-\usepackage{amsmath}
-
-\begin{document}
-
-\maketitle
-
-\section{Integrals}
-
-Integral \(\int_{a}^{b} x^2 dx\) inside text.
-
-\medskip
-
-The same integral on display:
-\[
-    \int_{a}^{b} x^2 \,dx
-\]
-and multiple integrals:
-\begin{gather*}
-    \iint_V \mu(u,v) \,du\,dv
+\int_{a}^{b} x^2 \,dx
 \\
-    \iiint_V \mu(u,v,w) \,du\,dv\,dw
+\iint_V \mu(u,v)\,\mathrm{d}u\,\mathrm{d}v
 \\
-    \iiiint_V \mu(t,u,v,w) \,dt\,du\,dv\,dw
+\iiint_V \mu(u,v,w)\,\mathrm{d}u\,\mathrm{d}v\,\mathrm{d}w
 \\
-    \idotsint_V \mu(u_1,\dots,u_k) \,du_1 \dots du_k
+\int {\dots \atop V} \int \mu(u_1,\dots,u_k)\,\mathrm{d}u_1\,\dots du_k
 \\
-    \oint_V f(s) \,ds
-\end{gather*}
-
-\section{Sums and products}
-
-Sum \(\sum_{n=1}^{\infty} 2^{-n} = 1\) inside text.
-
-The same sum on display:
-\[
-    \sum_{n=1}^{\infty} 2^{-n} = 1
-\]
-
-Product \(\prod_{i=a}^{b} f(i)\) inside text.
-
-The same product on display:
-\[
-    \prod_{i=a}^{b} f(i)
-\]
-
-\section{Limits}
-
-Limit \(\lim_{x\to\infty} f(x)\) inside text.
-
-The same limit on display:
-\[
-    \lim_{x\to\infty} f(x)
-\]
-
-\end{document}
+\oint_V f(s)\,\mathrm{d}s
+\\
+\sum_{n=1}^{\infty} 2^{-n} = 1
+\\
+\prod_{i=a}^{b} f(i)
+\\
+\lim_{x\to\infty} f(x)
 ```
 
 ## By render
 
 ```[latex]
-\documentclass{article}
-\title{Integrals, Sums and Limits}
-\author{Overleaf}
-\date{}
-\usepackage{amsmath}
-
-\begin{document}
-
-\maketitle
-
-\section{Integrals}
-
-Integral \(\int_{a}^{b} x^2 dx\) inside text.
-
-\medskip
-
-The same integral on display:
-\[
-    \int_{a}^{b} x^2 \,dx
-\]
-and multiple integrals:
-\begin{gather*}
-    \iint_V \mu(u,v) \,du\,dv
+\int_{a}^{b} x^2 \,dx
 \\
-    \iiint_V \mu(u,v,w) \,du\,dv\,dw
+\iint_V \mu(u,v)\,\mathrm{d}u\,\mathrm{d}v
 \\
-    \iiiint_V \mu(t,u,v,w) \,dt\,du\,dv\,dw
+\iiint_V \mu(u,v,w)\,\mathrm{d}u\,\mathrm{d}v\,\mathrm{d}w
 \\
-    \idotsint_V \mu(u_1,\dots,u_k) \,du_1 \dots du_k
+\int {\dots \atop V} \int \mu(u_1,\dots,u_k)\,\mathrm{d}u_1\,\dots du_k
 \\
-    \oint_V f(s) \,ds
-\end{gather*}
-
-\section{Sums and products}
-
-Sum \(\sum_{n=1}^{\infty} 2^{-n} = 1\) inside text.
-
-The same sum on display:
-\[
-    \sum_{n=1}^{\infty} 2^{-n} = 1
-\]
-
-Product \(\prod_{i=a}^{b} f(i)\) inside text.
-
-The same product on display:
-\[
-    \prod_{i=a}^{b} f(i)
-\]
-
-\section{Limits}
-
-Limit \(\lim_{x\to\infty} f(x)\) inside text.
-
-The same limit on display:
-\[
-    \lim_{x\to\infty} f(x)
-\]
-
-\end{document}
+\oint_V f(s)\,\mathrm{d}s
+\\
+\sum_{n=1}^{\infty} 2^{-n} = 1
+\\
+\prod_{i=a}^{b} f(i)
+\\
+\lim_{x\to\infty} f(x)
 ```
 
 ## Source
