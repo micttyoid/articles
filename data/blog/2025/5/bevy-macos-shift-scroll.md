@@ -16,7 +16,7 @@ tags:
 
 # Handling macOS horizontal scroll in Bevy
 
-Working on input handling in my Bevy project, I noticed that, on macOS, 
+Working on input handling in my Bevy project, I noticed that, on macOS,
 scrolling with the shift key held down is treated as horizontal scroll
 (vertical otherwise). This default behavior of macOS differs from
 Windows/Linux, where shift combination typically does not modify scroll input.

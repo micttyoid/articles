@@ -2,7 +2,7 @@
 title: 'Layout of selective debugging in Rust'
 date-published: null
 date-drafted: 2025-05-02
-date-modified: 2025-05-04
+date-modified: 2025-05-07
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -13,6 +13,19 @@ tags:
 ---
 
 # Layout of selective debugging in Rust
+
+Debugging often comes with a performance cost, especially in graphics-heavy
+applications or on low-profile development setups. However, in Rust, we can 
+mitigate it by selectively enabling only the debugging features we need.
+
+Narrowing down debugging to specific features, we reduce runtime overhead and
+keep compile times lean. This not only improves debugging performance but also
+helps maintain focus by isolating the relevant parts of the code. For
+developers working with constrained hardware, this can make the difference
+between a sluggish and a smooth debugging experience.
+
+Here I share an example to have the selective debugging in Rust: keeping your
+workflow efficient and your attention where it matters the most.
 
 **Barplication** (dependee application)
 
