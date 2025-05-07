@@ -4,7 +4,7 @@ date-published: null
 date-drafted: 2025-05-02
 date-modified: 2025-05-04
 author:
-  - name: Luke Yoo
+  - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
   - website1: https://github.com/micttyoid
 tags:
