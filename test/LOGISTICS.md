@@ -12,3 +12,5 @@ Examples:
 [https://lukeyoo.fyi/test/data/pikchr-example.md](https://lukeyoo.fyi/test/data/pikchr-example.md)
 
 [https://lukeyoo.fyi/test/data/c4plantuml-example.md](https://lukeyoo.fyi/test/data/c4plantuml-example.md)
+
+[https://lukeyoo.fyi/test/data/bpmn-example.md](https://lukeyoo.fyi/test/data/bpmn-example.md)
