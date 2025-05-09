@@ -17,6 +17,20 @@ tags:
 
 Designing a plugin, the `Poststartup` stage in Bevy's schedule is an excellent timeline to check on intial game condition with less overhead.
 
+## Simplified main schedule in Bevy upto "First"
+
+```[mermaid]
+flowchart LR
+    %% Conditional starting point
+    bevy_state{bevy_state?} -->|enabled| StateTransition
+    bevy_state -->|disabled| PreStartup
+
+    %% Main flow
+    StateTransition --> PreStartup
+    PreStartup --> Startup --> PostStartup
+    PostStartup --> A@{ shape: circle, label: "First" }
+```
+
 Following examples validate some intial conditions of entity instance(s).
 
 ## Example: at least one
@@ -61,3 +75,7 @@ impl Plugin for FooPlugin {
 They are guaranteed **at the beginning only**. For example, an **initial** 
 adjustment on camera, targetting on entity can be guaranteed by such 
 validation. It does not guaratee any condition further from the timeline.
+
+## See also
+
+[Struct Main](https://docs.rs/bevy/latest/bevy/app/struct.Main.html)
