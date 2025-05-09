@@ -1,4 +1,4 @@
-# PlantUML sequence examples
+# Test data: PlantUML - Sequence examples
 
 ## Sequence: declaring participants
 
