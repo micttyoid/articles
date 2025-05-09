@@ -2,7 +2,7 @@
 title: 'Plugin-side checkup by PostStartup'
 date-published: 2025-05-09
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-09
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -19,7 +19,7 @@ Designing a plugin, the `Poststartup` stage in Bevy's schedule is an excellent t
 
 Following examples validate some intial conditions of entity instance(s).
 
-# Example: at least one
+## Example: at least one
 ```rust
 fn at_least_one(query: Query<Entity, With<DoYouEvenExist>>) {
     if query.is_empty() {
@@ -30,7 +30,7 @@ fn at_least_one(query: Query<Entity, With<DoYouEvenExist>>) {
 }
 ```
 
-# Example: exactly one
+## Example: exactly one
 ```rust
 fn the_one_and_only(query: Query<Entity, With<TheOneAndOnly>>) {
     match query.single() {
