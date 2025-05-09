@@ -485,3 +485,7 @@ Table cart_items {
   }
 }
 ```
+
+## Source
+
+[DB Diagram](https://dbdiagram.io)
