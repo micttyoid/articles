@@ -17,4 +17,4 @@ tags:
 
 Databasoid for Promenade
 
-[Latest](https://lukeyoo.fyi/blog/2025/5/bevy-macos-shift-scroll)
+[Latest](https://lukeyoo.fyi/blog/2025/5/bevy-post-startup-check)
