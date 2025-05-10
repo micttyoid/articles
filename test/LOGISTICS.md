@@ -14,3 +14,9 @@ Examples:
 [https://lukeyoo.fyi/test/data/c4plantuml-example.md](https://lukeyoo.fyi/test/data/c4plantuml-example.md)
 
 [https://lukeyoo.fyi/test/data/bpmn-example.md](https://lukeyoo.fyi/test/data/bpmn-example.md)
+
+## Live testing: syntax
+
+Example(s):
+
+[https://lukeyoo.fyi/test/data/syntax/swift-example.md](https://lukeyoo.fyi/test/data/syntax/swift-example.md)
