@@ -2,7 +2,7 @@
 title: 'Red-Black Trees'
 date-published: 2025-05-10
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-11
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -186,6 +186,6 @@ RB-DELETE-FIXUP(T, x)
     x.color = BLACK        
 ```
 
-## References
+## Reference(s)
 
 - T. H. Cormen, C. E. Leiserson, R. L. Rivest and C. Stein, _Introduction to Algorithms_, 3rd ed. Cambridge, MA: The MIT Press, 2009.

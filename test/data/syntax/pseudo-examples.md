@@ -1,6 +1,6 @@
 # Test data: Pseudo - Examples
 
-## Loosen codepoint
+## Loosen codepoint 1
 
 ```pseudo
 DIJKSTRA(G, w, s):
@@ -25,6 +25,28 @@ RELAX(u, v, w):
     if v.d > u.d + w(u, v):
         v.d = u.d + w(u, v)
         v.π = u
+```
+
+## Loosen codepoint 2
+
+```pseudo
+MAX-HEAPIFY(A, i)
+    l = LEFT(i)
+    r = RIGHT(i)
+    if l <= A.heap-size and A[l] > A[i]
+        largest = l 
+    else 
+        largest = i
+    if r <= A.heap-size and A[r] > A[largest]
+        largest = r
+    if largest != i
+        exchange A[i] with A[largest]
+        MAX-HEAPIFY(A, largest)
+
+BUILD-MAX-HEAP(A)
+    A.heap-size = A.length
+    for i = ⌊A.length / 2⌋ downto 1
+        MAX-HEAPIFY(A, i)     
 ```
 
 ## Comment
