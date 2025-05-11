@@ -1,3 +1,16 @@
+---
+title: 'Multithreaded Procedure to compute Fibonacci number'
+date-published: 2025-05-11
+date-drafted: null
+date-modified: 2025-05-11
+author:
+  - name: 'Luke Yoo'
+  - email: w.lukeyoo@gmail.com
+  - website1: https://github.com/micttyoid
+tags:
+  - 'Algorithm'
+  - 'Multithreading'
+---
 
 # Multithreaded Procedure to compute Fibonacci number
 
@@ -11,6 +24,18 @@ P-FIB(n)
         x = spawn P-FIB(n - 1)
         y = P-FIB(n - 2)
         sync
+        return x + y
+```
+
+## The serial version in pseudocode
+
+```pseudo
+FIB(n)
+    if n <= 1
+        return n
+    else
+        x = FIB(n - 1)
+        y = FIB(n - 2)
         return x + y
 ```
 
