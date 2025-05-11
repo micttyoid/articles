@@ -27,7 +27,7 @@ RELAX(u, v, w):
         v.π = u
 ```
 
-## Loosen codepoint 2
+## Loosen codepoint 2: Floors and ceilings
 
 ```pseudo
 MAX-HEAPIFY(A, i)
@@ -48,6 +48,10 @@ BUILD-MAX-HEAP(A)
     for i = ⌊A.length / 2⌋ downto 1
         MAX-HEAPIFY(A, i)     
 ```
+
+## TODO: modular
+
+## TODO: greeks
 
 ## Comment
 
