@@ -2,7 +2,7 @@
 title: 'Plugin-side checkup by PostStartup'
 date-published: 2025-05-09
 date-drafted: null
-date-modified: 2025-05-09
+date-modified: 2025-05-11
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -15,7 +15,7 @@ tags:
 
 # Plugin-side checkup by PostStartup
 
-Designing a plugin, the `Poststartup` stage in Bevy's schedule is an excellent timeline to check on intial game condition with less overhead.
+Designing a plugin, the `Poststartup` stage in Bevy's schedule is an excellent interval to check on intial game condition with less overhead.
 
 ## Simplified main schedule in Bevy upto "First"
 
@@ -74,7 +74,7 @@ impl Plugin for FooPlugin {
 
 They are guaranteed **at the beginning only**. For example, an **initial** 
 adjustment on camera, targetting on entity can be guaranteed by such 
-validation. It does not guaratee any condition further from the timeline.
+validation. It does not guaratee any condition further from the period.
 
 ## See also
 
