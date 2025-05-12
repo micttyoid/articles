@@ -17,5 +17,5 @@ tags:
 
 Databasoid for Promenade
 
-[Latest Blog](https://lukeyoo.fyi/blog/2025/5/bevy-post-startup-check)
-[Latest Recap](https://lukeyoo.fyi/recap/2025/5/mean-heap)
+- [Latest blog](https://lukeyoo.fyi/blog/2025/5/bevy-post-startup-check)
+- [Latest recap](https://lukeyoo.fyi/recap/2025/5/mean-heap)
