@@ -2,7 +2,7 @@
 title: 'Mean-heap'
 date-published: 2025-05-12
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-12
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -22,8 +22,8 @@ tags:
 - Prim's algorithm
 - Dijkstra's algorithm
 
+## Table of Content
 
-**Table of Content**
 - [Operations](#operations)
   - [INSERT](#insert)
   - [MINIMUM](#minimum)
