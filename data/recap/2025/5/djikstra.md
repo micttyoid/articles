@@ -2,7 +2,7 @@
 title: "Djikstra's algorithm"
 date-published: 2025-05-10
 date-drafted: null
-date-modified: 2025-05-11
+date-modified: 2025-05-13
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -15,7 +15,9 @@ tags:
 
 # Djikstra's algorithm
 
-## Procedure in pseudocode
+## Procedure
+
+**DIJKSTRA**
 
 ```pseudo
 DIJKSTRA(G, w, s):
@@ -41,6 +43,10 @@ RELAX(u, v, w):
         v.d = u.d + w(u, v)
         v.π = u
 ```
+
+The operation `EXTRACT-MIN` can be implmented by
+[HEAP-EXTRACT-MIN](https://lukeyoo.fyi/recap/2025/5/mean-heap#extract-min) 
+in setting of priority queue.
 
 ## Reference(s)
 
