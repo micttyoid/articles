@@ -10,6 +10,8 @@ Examples:
 
 [https://lukeyoo.fyi/test/data/render/latex-integrals-1.md](https://lukeyoo.fyi/test/data/render/latex-integrals-1.md)
 
+[https://lukeyoo.fyi/test/data/render/mermaid-class-pickery-example.md](https://lukeyoo.fyi/test/data/render/mermaid-class-pickery-example.md)
+
 [https://lukeyoo.fyi/test/data/render/pikchr-example.md](https://lukeyoo.fyi/test/data/render/pikchr-example.md)
 
 [https://lukeyoo.fyi/test/data/render/c4plantuml-example.md](https://lukeyoo.fyi/test/data/render/c4plantuml-example.md)
