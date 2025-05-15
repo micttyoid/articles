@@ -19,18 +19,17 @@ tags:
 
 ## Operations
 
-Canonicals
-- [SEARCH](#search)
-- [INSERT](#insert)
-- [DELETE](#delete)
-- [MINIMUM](#minimum)
-- [MAXIMUM](#maximum)
-- [SUCCESSOR](#successor)
-- [PREDECESSOR](#predecessor)
-
-Others
-- [MEMBER](#member)
-- [helpers](#helpers)
+- Canonicals
+  - [SEARCH](#search)
+  - [INSERT](#insert)
+  - [DELETE](#delete)
+  - [MINIMUM](#minimum)
+  - [MAXIMUM](#maximum)
+  - [SUCCESSOR](#successor)
+  - [PREDECESSOR](#predecessor)
+- Others
+  - [MEMBER](#member)
+  - [Helpers](#helpers)
 
 ### SEARCH
 
