@@ -2,7 +2,7 @@
 title: "Van Emde Boas"
 date-published: 2025-05-14
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-14
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -198,7 +198,6 @@ vEB-TREE-MEMBER(V, x)
 ### Helpers
 
 ```[latex]
-\[
 \begin{align*}
 &\text{ }\: 
 \text{high}(x) = \lfloor x \: / \enspace \mathclap{^\downarrow}\sqrt{u} \rfloor
@@ -210,7 +209,6 @@ vEB-TREE-MEMBER(V, x)
 \text{index}(x,y) = x \enspace \mathclap{^\downarrow}\sqrt{u} + y
 \quad \text{where}\: 2^{\lceil ( \text{lg}\:u /2) \rceil} \:\text{is denoted by}\enspace \mathclap{^\downarrow}\sqrt{u}
 \end{align*}
-\]
 ```
 
 ## Reference(s)
