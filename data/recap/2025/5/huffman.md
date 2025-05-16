@@ -2,7 +2,7 @@
 title: 'Huffman codes'
 date-published: 2025-05-13
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-16
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -33,7 +33,7 @@ HUFFMAN(C)
 ## Common options of implementation
 
 - [mean-heap](https://lukeyoo.fyi/recap/2025/5/mean-heap): `O(n log n)`
-- van Emde Boas: `O(n log log n)`
+- [van Emde Boas](https://lukeyoo.fyi/recap/2025/5/van-emde-boas): `O(n log log n)`
 
 ## Reference(s)
 

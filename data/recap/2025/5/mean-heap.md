@@ -2,7 +2,7 @@
 title: 'Mean-heap'
 date-published: 2025-05-12
 date-drafted: null
-date-modified: 2025-05-12
+date-modified: 2025-05-16
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -10,7 +10,8 @@ author:
 tags:
   - 'Algorithm'
   - 'Data structure'
-  - 'Mean-heap'
+  - 'Heap'
+  - 'Mean-heap'  
   - 'Tree'
 ---
 
@@ -18,9 +19,9 @@ tags:
 
 **Uses**
 - Priority queue: INSERT, MINIMUM, EXTRACT-MIN, DECREASE-KEY
-- Huffman codes
+- [Huffman codes](https://lukeyoo.fyi/recap/2025/5/huffman)
 - Prim's algorithm
-- Dijkstra's algorithm
+- [Dijkstra's algorithm](https://lukeyoo.fyi/recap/2025/5/djikstra)
 
 ## Table of Content
 
