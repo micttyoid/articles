@@ -251,11 +251,10 @@ r^2 = \frac{s_{xy}^2}{s_{xx}s_{yy}},
 where
 
 ```[latex]
-s_{xx} &= \sum_{i=1}^n (x_i - \bar{x})^2, \\
-s_{yy} &= \sum_{i=1}^n (y_i - \bar{y})^2, \\
-s_{xy} &= \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}).
+s_{xx} = \sum_{i=1}^n (x_i - \bar{x})^2, \quad
+s_{yy} = \sum_{i=1}^n (y_i - \bar{y})^2, \quad
+s_{xy} = \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}).
 ```
-
 
 We have $0 \leq r^2 \leq 1$. Larger values of $r^2$ generally suggest that our linear model
 
