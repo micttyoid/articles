@@ -2,7 +2,7 @@
 title: 'Statistical Inference I'
 date-published: 2025-05-17
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-17
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -186,8 +186,8 @@ A **test statistic** is a statistic based on which we build our statistical test
 Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Suppose that we have observed $X_1=x_1, X_2=x_2, \dots, X_n=x_n$. To decide between two simple hypotheses
 
 ```[latex]
-H_0&: \theta = \theta_0, \\
-H_1&: \theta = \theta_1,
+H_0: \theta = \theta_0, \\
+H_1: \theta = \theta_1,
 ```
 
 we define
