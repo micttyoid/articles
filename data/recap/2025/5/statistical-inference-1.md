@@ -215,7 +215,11 @@ We can estimate $\beta_0$ and $\beta_1$ as
 \hat{\beta_1} &= \frac{s_{xy}}{s_{xx}}, \\
 \hat{\beta_0} &= \bar{y} - \hat{\beta_1}\bar{x},
 \end{align*}
+```
+
 where
+
+```[latex]
 \begin{align*}
 s_{xx} &= \sum_{i=1}^n (x_i - \bar{x})^2, \\
 s_{xy} &= \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}).
