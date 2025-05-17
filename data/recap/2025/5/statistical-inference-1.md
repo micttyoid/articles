@@ -94,7 +94,7 @@ Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a pa
 2. $\hat{\Theta}_{\text{ML}}$ is asymptotically unbiased, i.e.,
 
 ```[latex]
-\lim_{n\to\infty} \mathbb{E}\left[\hat{\Theta}_{\text{ML}}\right] = \theta.
+\lim_{n\to\infty} E\left[\hat{\Theta}_{\text{ML}}\right] = \theta.
 ```
 
 3. As $n$ becomes large, $\hat{\Theta}_{\text{ML}}$ is approximately a normal random variable. More precisely, the random variable
@@ -196,7 +196,7 @@ we define
 \lambda(x_1,x_2,\cdots,x_n) = \frac{L(x_1,x_2,\cdots,x_n;\theta_0)}{L(x_1,x_2,\cdots,x_n;\theta_1)}.
 ```
 
-To perform a likelihood ratio test (LRT), we choose a constant $c$. We reject $H_0$ if $\lambda < c$ and accept it if $\lambda \geq c$. The value of $c$ can be chosen based on the desired $\alpha$
+To perform a **likelihood ratio test (LRT)**, we choose a constant $c$. We reject $H_0$ if $\lambda < c$ and accept it if $\lambda \geq c$. The value of $c$ can be chosen based on the desired $\alpha$
 
 
 ## Simple Linear Regression
