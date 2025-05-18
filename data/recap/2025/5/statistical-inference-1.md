@@ -186,8 +186,10 @@ A **test statistic** is a statistic based on which we build our statistical test
 Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Suppose that we have observed $X_1=x_1, X_2=x_2, \dots, X_n=x_n$. To decide between two simple hypotheses
 
 ```[latex]
-H_0: \theta = \theta_0, \\
-H_1: \theta = \theta_1,
+\begin{align*}
+H_0: \theta &= \theta_0, \\
+H_1: \theta &= \theta_1,
+\end{align*}
 ```
 
 we define
@@ -212,8 +214,8 @@ We can estimate $\beta_0$ and $\beta_1$ as
 
 ```[latex]
 \begin{align*}
-\hat{\beta_1} &= \frac{s_{xy}}{s_{xx}}, \\
-\hat{\beta_0} &= \bar{y} - \hat{\beta_1}\bar{x},
+\hat{\beta}_1 &= \frac{s_{xy}}{s_{xx}}, \\
+\hat{\beta}_0 &= \bar{y} - \hat{\beta}_1\bar{x},
 \end{align*}
 ```
 
@@ -229,7 +231,7 @@ s_{xy} &= \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}).
 For each $x_i$, the **fitted value** $\hat{y}_i$ is obtained by
 
 ```[latex]
-\hat{y}_i = \hat{\beta_0} + \hat{\beta_1}x_i.
+\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i.
 ```
 
 The quantities
@@ -259,7 +261,7 @@ s_{xy} = \sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y}).
 We have $0 \leq r^2 \leq 1$. Larger values of $r^2$ generally suggest that our linear model
 
 ```[latex]
-\hat{y_i} = \hat{\beta_0} + \hat{\beta_1}x_i
+\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i
 ```
 
 is a good fit for the data.
