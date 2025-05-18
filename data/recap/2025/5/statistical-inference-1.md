@@ -237,7 +237,7 @@ Assumptions: A random sample $X_1, X_2, \ldots, X_n$ is given from a $N(\mu,\sig
 
 Parameter to be Estimated: $\text{Var}(X_i) = \sigma^2$.
 
-Confidence Interval: $\left[\frac{(n-1)S^2}{\chi^2_{\alpha/2,n-1}},\ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2,n-1}}\right]$ is a $(1-\alpha)100\%$ confidence interval for $\sigma^2$.
+Confidence Interval: $\left[\frac{(n-1)S^2}{\chi^2_{\alpha/2,n\text{-}1}},\ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2,n\text{-}1}}\right]$ is a $(1-\alpha)100\%$ confidence interval for $\sigma^2$.
 
 ## Statistic
 
