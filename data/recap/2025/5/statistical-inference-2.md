@@ -111,6 +111,22 @@ E[(X - X_L)^2] = E[\tilde{X}^2] = (1 - \rho^2)\text{Var}(X).
 
 Choose the hypothesis with the highest posterior probability, $P(H_i|Y=y)$. Equivalently, choose hypothesis $H_i$ with the highest $f_Y(y|H_i)P(H_i).$
 
+## Minimum Cost Hypothesis Test
+
+Assuming the following costs:
+- $C_{10}$: The cost of choosing $H_1$ when $H_0$ is true
+- $C_{01}$: The cost of choosing $H_0$ when $H_1$ is true
+
+The optimal decision rule is to choose $H_0$ if and only if:
+```[latex]
+\frac{f_Y(y|H_0)}{f_Y(y|H_1)} \geq \frac{P(H_1)C_{01}}{P(H_0)C_{10}}.
+```
+
+Equivalently, choose $H_0$ if and only if:
+```[latex]
+P(H_0|y)C_{10} \geq P(H_1|y)C_{01}.
+```
+
 ## Bayesian Credible Intervals
 
 Given the observation $Y = y$, the interval $[a, b]$ is said to be a $(1-\alpha)100\%$ credible interval for $X$ if the posterior probability of $X$ being in $[a, b]$ is equal to $1-\alpha$. In other words,
