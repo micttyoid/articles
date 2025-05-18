@@ -83,24 +83,24 @@ In some problems, it is easier to work with the **log likelihood function** give
 
 ## Asymptotic Properties of MLEs
 
-Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Let $\hat{\Theta}_{\tiny\text{ML}}$ denote the maximum likelihood estimator (MLE) of $\theta$. Then, under some mild regularity conditions,
+Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Let $\hat{\Theta}_{\text{\tiny{ML}}}$ denote the maximum likelihood estimator (MLE) of $\theta$. Then, under some mild regularity conditions,
 
-1. $\hat{\Theta}_{\tiny\text{ML}}$ is asymptotically consistent, i.e.,
+1. $\hat{\Theta}_{\text{\tiny{ML}}}$ is asymptotically consistent, i.e.,
 
 ```[latex]
-\lim_{n\to\infty} P\left(\left|\hat{\Theta}_{\tiny\text{ML}} - \theta\right| > \epsilon\right) = 0.
+\lim_{n\to\infty} P\left(\left|\hat{\Theta}_{\text{\tiny{ML}}} - \theta\right| > \epsilon\right) = 0.
 ```
     
-2. $\hat{\Theta}_{\tiny\text{ML}}$ is asymptotically unbiased, i.e.,
+2. $\hat{\Theta}_{\text{\tiny{ML}}}$ is asymptotically unbiased, i.e.,
 
 ```[latex]
-\lim_{n\to\infty} E\left[\hat{\Theta}_{\tiny\text{ML}}\right] = \theta.
+\lim_{n\to\infty} E\left[\hat{\Theta}_{\text{\tiny{ML}}}\right] = \theta.
 ```
 
-3. As $n$ becomes large, $\hat{\Theta}_{\tiny\text{ML}}$ is approximately a normal random variable. More precisely, the random variable
+3. As $n$ becomes large, $\hat{\Theta}_{\text{\tiny{ML}}}$ is approximately a normal random variable. More precisely, the random variable
 
 ```[latex]
-\frac{\hat{\Theta}_{\tiny\text{ML}} - \theta}{\sqrt{\text{Var}\left(\hat{\Theta}_{\tiny\text{ML}}\right)}}
+\frac{\hat{\Theta}_{\text{\tiny{ML}}} - \theta}{\sqrt{\text{Var}\left(\hat{\Theta}_{\text{\tiny{ML}}}\right)}}
 ```
 converges in distribution to $N(0,1)$.
 
