@@ -2,7 +2,7 @@
 title: 'Statistical Inference II'
 date-published: 2025-05-18
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-18
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -48,7 +48,7 @@ If either $X$ or $Y$ is discrete, we replace its PDF in the above expression by 
 The minimum mean squared error (MMSE) estimate of the random variable $X$, given that we have observed $Y=y$, is given by
 
 ```[latex]
-\hat{x}_{\text{MMSE}} = \mathbb{E}[X|Y=y].
+\hat{x}_{\text{MMSE}} = E[X|Y=y].
 ```
 
 ## Mean Squared Error (MSE) of an Estimator
@@ -56,22 +56,22 @@ The minimum mean squared error (MMSE) estimate of the random variable $X$, given
 Let $\hat{X} = g(Y)$ be an estimator of the random variable $X$, given that we have observed the random variable $Y$. The mean squared error (MSE) of this estimator is defined as
 
 ```[latex]
-\mathbb{E}\left[(X-\hat{X})^2\right] = \mathbb{E}\left[(X-g(Y))^2\right].
+E\left[(X-\hat{X})^2\right] = E\left[(X-g(Y))^2\right].
 ```
 The MMSE estimator of $X$,
 
 ```[latex]
-\hat{X}_M = \mathbb{E}[X|Y],
+\hat{X}_M = E[X|Y],
 ```
 has the lowest MSE among all possible estimators.
 
 **Some Additional Properties of the MMSE Estimator**
 
-- The MMSE estimator, $\hat{X}_M = \mathbb{E}[X|Y]$, has the same expectation as $X$, i.e.,
+- The MMSE estimator, $\hat{X}_M = E[X|Y]$, has the same expectation as $X$, i.e.,
 
 
 ```[latex]
-\mathbb{E}[\hat{X}_M] = \mathbb{E}X, \quad \mathbb{E}[\tilde{X}] = 0.
+E[\hat{X}_M] = EX, \quad E[\tilde{X}] = 0.
 ```
   
 - The estimation error, $\tilde{X}$, and $\hat{X}_M$ are uncorrelated:
@@ -84,7 +84,7 @@ has the lowest MSE among all possible estimators.
 - We have:
 
 ```[latex]
-\text{Var}(X) = \text{Var}(\hat{X}_M) + \text{Var}(\tilde{X}), \quad \mathbb{E}[X^2] = \mathbb{E}[\hat{X}_M^2] + \mathbb{E}[\tilde{X}^2].
+\text{Var}(X) = \text{Var}(\hat{X}_M) + \text{Var}(\tilde{X}), \quad E[X^2] = E[\hat{X}_M^2] + E[\tilde{X}^2].
 ```
 
 ## Linear MMSE Estimator
@@ -92,19 +92,19 @@ has the lowest MSE among all possible estimators.
 The linear MMSE estimator of the random variable $X$, given that we have observed $Y$, is given by
 
 ```[latex]
-\hat{X}_L = \frac{\text{Cov}(X,Y)}{\text{Var}(Y)}(Y - \mathbb{E}Y) + \mathbb{E}X = \rho\frac{\sigma_X}{\sigma_Y}(Y - \mathbb{E}Y) + \mathbb{E}X.
+\hat{X}_L = \frac{\text{Cov}(X,Y)}{\text{Var}(Y)}(Y - EY) + EX = \rho\frac{\sigma_X}{\sigma_Y}(Y - EY) + EX.
 ```
 
 The estimation error, defined as $\tilde{X} = X - \hat{X}_L$, satisfies the orthogonality principle:
 
 ```[latex]
-\mathbb{E}[\tilde{X}] = 0, \quad \text{Cov}(\tilde{X}, Y) = \mathbb{E}[\tilde{X} Y] = 0.
+E[\tilde{X}] = 0, \quad \text{Cov}(\tilde{X}, Y) = E[\tilde{X} Y] = 0.
 ```
 
 The MSE of the linear MMSE is given by
 
 ```[latex]
-\mathbb{E}[(X - X_L)^2] = \mathbb{E}[\tilde{X}^2] = (1 - \rho^2)\text{Var}(X).
+E[(X - X_L)^2] = E[\tilde{X}^2] = (1 - \rho^2)\text{Var}(X).
 ```
 
 ## MAP Hypothesis Test
