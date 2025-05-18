@@ -2,7 +2,7 @@
 title: 'Statistical Inference I'
 date-published: 2025-05-17
 date-drafted: null
-date-modified: 2025-05-17
+date-modified: 2025-05-18
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -83,24 +83,24 @@ In some problems, it is easier to work with the **log likelihood function** give
 
 ## Asymptotic Properties of MLEs
 
-Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Let $\hat{\Theta}_{\text{ML}}$ denote the maximum likelihood estimator (MLE) of $\theta$. Then, under some mild regularity conditions,
+Let $X_1, X_2, X_3, \dots, X_n$ be a random sample from a distribution with a parameter $\theta$. Let $\hat{\Theta}_{\tiny\text{ML}}$ denote the maximum likelihood estimator (MLE) of $\theta$. Then, under some mild regularity conditions,
 
-1. $\hat{\Theta}_{\text{ML}}$ is asymptotically consistent, i.e.,
+1. $\hat{\Theta}_{\tiny\text{ML}}$ is asymptotically consistent, i.e.,
 
 ```[latex]
-\lim_{n\to\infty} P\left(\left|\hat{\Theta}_{\text{ML}} - \theta\right| > \epsilon\right) = 0.
+\lim_{n\to\infty} P\left(\left|\hat{\Theta}_{\tiny\text{ML}} - \theta\right| > \epsilon\right) = 0.
 ```
     
-2. $\hat{\Theta}_{\text{ML}}$ is asymptotically unbiased, i.e.,
+2. $\hat{\Theta}_{\tiny\text{ML}}$ is asymptotically unbiased, i.e.,
 
 ```[latex]
-\lim_{n\to\infty} E\left[\hat{\Theta}_{\text{ML}}\right] = \theta.
+\lim_{n\to\infty} E\left[\hat{\Theta}_{\tiny\text{ML}}\right] = \theta.
 ```
 
-3. As $n$ becomes large, $\hat{\Theta}_{\text{ML}}$ is approximately a normal random variable. More precisely, the random variable
+3. As $n$ becomes large, $\hat{\Theta}_{\tiny\text{ML}}$ is approximately a normal random variable. More precisely, the random variable
 
 ```[latex]
-\frac{\hat{\Theta}_{\text{ML}} - \theta}{\sqrt{\text{Var}\left(\hat{\Theta}_{\text{ML}}\right)}}
+\frac{\hat{\Theta}_{\tiny\text{ML}} - \theta}{\sqrt{\text{Var}\left(\hat{\Theta}_{\tiny\text{ML}}\right)}}
 ```
 converges in distribution to $N(0,1)$.
 
@@ -137,7 +137,7 @@ Y = Z_1^2 + Z_2^2 + \cdots + Z_n^2
 is said to have a chi-squared distribution with $n$ degrees of freedom shown by
 
 ```[latex]
-Y \sim \chi^2(n).
+Y \sim \: \vcenter{\chi}^{2} (n).
 ```
 
 Properties:
@@ -151,7 +151,11 @@ Y \sim \text{Gamma}\left(\frac{n}{2}, \frac{1}{2}\right).
 Thus,
 
 ```[latex]
-f_Y(y) = \frac{1}{2^{\frac{n}{2}}\Gamma\left(\frac{n}{2}\right)} y^{\frac{n}{2}-1} e^{-\frac{y}{2}}, \quad \text{for } y > 0.
+f_Y(y) = \frac{1}{
+  \Large{2^{\frac{n}{2}}} \:
+  \Gamma\raisebox{0.05em}{(} \vcenter{\normalsize\frac{n}{2}} \raisebox{0.05em}{)}
+}
+y^{\frac{n}{2}-1} e^{-\frac{y}{2}}, \quad \text{for } y > 0.
 ```
     
 2. $E[Y] = n$,
