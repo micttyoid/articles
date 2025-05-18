@@ -229,7 +229,7 @@ Assumptions: A random sample $X_1, X_2, \ldots, X_n$ is given from a $N(\mu,\sig
 
 Parameter to be Estimated: $\mu = E[X_i]$.
 
-Confidence Interval: $\left[\overline{X} - t_{\tiny\alpha/2,\!n\text{-}1}\frac{S}{\sqrt{n}},\ \overline{X} + t_{\tiny\alpha/2,\!n\text{-}1}\frac{S}{\sqrt{n}}\right]$ is a $(1-\alpha)$ confidence interval for $\mu$.
+Confidence Interval: $\left[\overline{X} - t_{\tiny\alpha/2,\negthinspace n\text{-}1}\frac{S}{\sqrt{n}},\ \overline{X} + t_{\tiny\alpha/2,\negthinspace n\text{-}1}\frac{S}{\sqrt{n}}\right]$ is a $(1-\alpha)$ confidence interval for $\mu$.
 
 ## Confidence Intervals for the Variance of Normal Random Variables
 
