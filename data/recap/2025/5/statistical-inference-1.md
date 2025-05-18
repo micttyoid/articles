@@ -126,7 +126,7 @@ Q = Q(X_1, X_2, \cdots, X_n, \theta).
 
 2. The probability distribution of $Q$ does not depend on $\theta$ or any other unknown parameters.
 
-## Chi-Squared Distribution
+## The Chi-Squared Distribution
 
 **Definition** If $Z_1, Z_2, \cdots, Z_n$ are independent standard normal random variables, the random variable $Y$ defined as
 
@@ -158,16 +158,86 @@ f_Y(y) = \frac{1}{
 y^{\frac{n}{2}-1} e^{-\frac{y}{2}}, \quad \text{for } y > 0.
 ```
     
-2. $E[Y] = n$,
+2. $E[Y] = n$ and $\text{Var}(Y) = 2n$.
     
-3. $\text{Var}(Y) = 2n$.
-    
-4. For any $p \in [0,1]$ and $n \in \mathbb{N}$, we define $\chi^2_{p,n}$ as the real value for which
+3. For any $p \in [0,1]$ and $n \in \mathbb{N}$, we define $\chi^2_{p,n}$ as the real value for which
 ```[latex]
 p\left(Y > \chi^2_{p,n}\right) = p
 ```
 
 where $Y \sim \chi^2(n)$.
+
+**Theorem** Let $X_1, X_2, \cdots, X_n$ be i.i.d. $N(\mu, \sigma^2)$ random variables. Also, let $S^2$ be the sample variance for this random sample. Then, the random variable $Y$ defined as  
+```[latex]
+Y = \frac{(n-1)S^2}{\sigma^2} = \frac{1}{\sigma^2} \sum_{i=1}^n (X_i - \overline{X})^2  
+```
+has a chi-squared distribution with $n-1$ degrees of freedom, i.e., $Y \sim \vcenter{\chi}^2(n-1)$. Moreover, $\overline{X}$ and $S^2$ are independent random variables.
+
+## The t-Distribution
+
+Let $Z \sim N(0,1)$, and $Y \sim \chi^2(n)$, where $n \in \mathbb{N}$. Also assume that $Z$ and $Y$ are independent. The random variable $T$ defined as
+```[latex]
+T = \frac{Z}{\sqrt{Y/n}}
+```
+is said to have a $t$-distribution with $n$ degrees of freedom shown by
+```[latex]
+T \sim T(n).
+```
+
+Properties:
+
+1. The $t$-distribution has a bell-shaped PDF centered at $0$, but its PDF is more spread out than the normal PDF.
+
+2. $E[T] = 0$, for $n > 0$. But $E[T]$ is undefined for $n = 1$.
+
+3. $\text{Var}(T) = \frac{n}{n-2}$, for $n > 2$. But, $\text{Var}(T)$ is undefined for $n = 1,2$.
+
+4. As $n$ becomes large, the $t$ density approaches the standard normal PDF. More formally, we can write
+```[latex]
+T(n) \xrightarrow{d} N(0,1).
+```
+
+5. For any $p \in [0,1]$ and $n \in \mathbb{N}$, we define $t_{p,n}$ as the real value for which
+```[latex]
+P(T > t_{p,n}) = p.
+```
+
+Since the $t$-distribution has a symmetric PDF, we have
+```[latex]
+t_{1-p,n} = -t_{p,n}.
+```
+
+**Theorem** Let $X_1, X_2, \cdots, X_n$ be i.i.d. $N(\mu, \sigma^2)$ random variables. Also, let $S^2$ be the sample variance for this random sample. Then, the random variable $T$ defined as
+```[latex]
+T = \frac{\overline{X} - \mu}{S/\sqrt{n}}
+```
+has a $t$-distribution with $n-1$ degrees of freedom, i.e., $T \sim T(n-1)$.
+
+## Confidence Intervals for the Mean of Normal Random Variables
+
+**$(1-\alpha)100\%$ confidence interval**
+
+Assumptions: A random sample $X_1, X_2, X_3, \ldots, X_n$ is given from a $N(\mu,\sigma^2)$ distribution, where $\text{Var}(X_i) = \sigma^2$ is known.
+
+Parameter to be Estimated: $\mu = E[X_i]$.
+
+Confidence Interval: $\left[\overline{X} - z_{\tiny\alpha/2}\frac{\sigma}{\sqrt{n}},\ \overline{X} + z_{\tiny\alpha/2}\frac{\sigma}{\sqrt{n}}\right]$ is a $(1-\alpha)100\%$ confidence interval for $\mu$.
+
+**$(1-\alpha)$ confidence interval**
+
+Assumptions: A random sample $X_1, X_2, \ldots, X_n$ is given from a $N(\mu,\sigma^2)$ distribution, where $\mu = E[X_i]$ and $\text{Var}(X_i) = \sigma^2$ are unknown.
+
+Parameter to be Estimated: $\mu = E[X_i]$.
+
+Confidence Interval: $\left[\overline{X} - t_{\tiny\alpha/2,\!n\text{-}1}\frac{S}{\sqrt{n}},\ \overline{X} + t_{\tiny\alpha/2,\!n\text{-}1}\frac{S}{\sqrt{n}}\right]$ is a $(1-\alpha)$ confidence interval for $\mu$.
+
+## Confidence Intervals for the Variance of Normal Random Variables
+
+Assumptions: A random sample $X_1, X_2, \ldots, X_n$ is given from a $N(\mu,\sigma^2)$ distribution, where $\mu = E[X_i]$ and $\text{Var}(X_i) = \sigma^2$ are unknown.
+
+Parameter to be Estimated: $\text{Var}(X_i) = \sigma^2$.
+
+Confidence Interval: $\left[\frac{(n-1)S^2}{\chi^2_{\alpha/2,n-1}},\ \frac{(n-1)S^2}{\chi^2_{1-\alpha/2,n-1}}\right]$ is a $(1-\alpha)100\%$ confidence interval for $\sigma^2$.
 
 ## Statistic
 
