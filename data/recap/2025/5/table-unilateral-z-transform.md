@@ -22,7 +22,7 @@ tags:
 |Time Delay| $x(n - 1)$ | $z^{-1}X(z) + x(-1)$ |
 |Time Advance| $x(n + 1)$ | $zX(z) - zx(0)$ |
 |Complex Modulation| $a^nx(n)$ | $X(z/a)$ |
-|Conjugation| $x^*(n)$ | $X^*(z^*)$ |
+|Conjugation| $x^*(n)$ | $ X^* \lparen z^* \rparen$ |
 |Upsampling| $(\uparrow M)x(n)$ | $X(z^M)$ |
 |Downsampling| $(\downarrow M)x(n)$ | $\frac{1}{M}\displaystyle\sum_{k=0}^{M-1} X(e^{-j2\pi k/M}\:z^{1/M})$ |
 |Convolution| $x_1 * x_2(n)$, x_1$ and $x_2$ are causal | $X_1(z)X_2(z)$ |
