@@ -24,10 +24,10 @@ tags:
 |Complex Modulation| $a^nx(n)$ | $X(z/a)$ |
 |Conjugation| $x^*(n)$ | $X^*(z^*)$ |
 |Upsampling| $(\uparrow M)x(n)$ | $X(z^M)$ |
-|Downsampling| $(\downarrow M)x(n)$ | $\frac{1}{M}\displaystyle\sum_{k=0}^{M-1} X(e^{-j2\pi k/M}z^{1/M})$ |
-|Convolution| $x_1 * x_2(n)$, $\newline x_1$ and $x_2$ are causal | $X_1(z)X_2(z)$ |
+|Downsampling| $(\downarrow M)x(n)$ | $\frac{1}{M}\displaystyle\sum_{k=0}^{M-1} X(e^{-j2\pi k/M}\:z^{1/M})$ |
+|Convolution| $x_1 * x_2(n)$, x_1$ and $x_2$ are causal | $X_1(z)X_2(z)$ |
 |Z-Domain Differentiation| $nx(n)$ | $-z\frac{d}{dz}X(z)$ |
-|Differencing| $x(n)-x(n-1)$ | $\frac{z-1}{z}X(z)-x(-1)\\=(1-z^{-1})X(z)-x(-1)$ |
+|Differencing| $x(n)-x(n-1)$ | $\frac{z-1}{z}X(z)-x(-1)=(1-z^{-1})X(z)-x(-1)$ |
 |Accumulation| $\displaystyle\sum_{k=0}^n x(k)$ | $\displaystyle\frac{z}{z-1}X(z) = \frac{1}{1 - z^{-1}}X(z)$ |
 
 |                     |                                        |
