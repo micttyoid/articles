@@ -1,5 +1,5 @@
 ---
-title: "Djikstra's algorithm"
+title: "Dijkstra's algorithm"
 date-published: 2025-05-10
 date-drafted: null
 date-modified: 2025-05-13
@@ -13,7 +13,7 @@ tags:
   - 'Algorithm'
 ---
 
-# Djikstra's algorithm
+# Dijkstra's algorithm
 
 ## Procedure
 
