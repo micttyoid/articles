@@ -2,7 +2,7 @@
 title: "Dijkstra's algorithm"
 date-published: 2025-05-10
 date-drafted: null
-date-modified: 2025-05-13
+date-modified: 2025-05-19
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
