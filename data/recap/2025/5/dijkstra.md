@@ -25,7 +25,7 @@ DIJKSTRA(G, w, s):
     S = ∅
     Q = G.V
     while Q != ∅:
-        u = EXTRACT-MIN(Q)
+        u = EXTRACT-MIN(Q) // greedy here
         S = S ∪ {u}
         for each vertex v in G.Adj[u]:
             RELAX(u, v, w)
