@@ -2,7 +2,7 @@
 title: "Dijkstra's algorithm"
 date-published: 2025-05-10
 date-drafted: null
-date-modified: 2025-05-19
+date-modified: 2025-05-22
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -17,8 +17,6 @@ tags:
 
 ## Procedure
 
-**DIJKSTRA**
-
 ```pseudo
 DIJKSTRA(G, w, s):
     INITIALIZE-SINGLE-SOURCE(G, s)
@@ -27,13 +25,13 @@ DIJKSTRA(G, w, s):
     while Q != ∅:
         u = EXTRACT-MIN(Q) // greedy here
         S = S ∪ {u}
-        for each vertex v in G.Adj[u]:
+        for each vertex v ∈ G.Adj[u]:
             RELAX(u, v, w)
 ```
 
 ```pseudo
 INITIALIZE-SINGLE-SOURCE(G, s):
-    for each vertex v in G.V:
+    for each vertex v ∈ G.V:
         v.d = ∞
         v.π = NIL
     s.d = 0
