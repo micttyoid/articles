@@ -22,9 +22,13 @@ tags:
 Properties: Uniform, Monotonic
 
 ```[latex]
+\begin{align*}
+&\text{ }\: 
 f(x) = \text{Round}\left( \frac{x - a}{b - a} \cdot (N - 1) \right)
 \\
+&\text{ }\: 
 f^{-1}(n) \approx a + \frac{n}{N - 1} \cdot (b - a)
+\end{align*}
 ```
 
 [Go find notebooks]
