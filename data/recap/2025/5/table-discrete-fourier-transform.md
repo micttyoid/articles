@@ -2,7 +2,7 @@
 title: "Table of Discrete Fourier Transform"
 date-published: 2025-05-23
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-23
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -29,7 +29,7 @@ tags:
 
 | Property              |                               |
 |-----------------------|-------------------------------|
-| Parseval's Relation   | $\displaystyle\sum_{n=0}^{N-1} \lvert x(n) \rvert^2 = \frac{1}{N}\sum_{k=0}^{N-1}\lvert X(k)\rvert^2$ |
+| Parseval's Relation   | $\displaystyle\sum_{n=0}^{N-1} \|x(n)\|^2 = \frac{1}{N}\sum_{k=0}^{N-1}\|X(k)\|^2$ |
 | Even Symmetry         | $x$ is even $\Leftrightarrow$ $X$ is even |
 | Odd Symmetry          | $x$ is odd $\Leftrightarrow$ $X$ is odd   |
 |Real / Conjugate Symmetry| $x$ is real $\Leftrightarrow$ $X$ is conjugate symmetric |
