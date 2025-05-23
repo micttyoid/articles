@@ -59,6 +59,3 @@ tags:
 ## Reference(s)
 
 - M. D. Adams, _Signals and Systems_, 3rd ed. The University of Victoria, Victoria, British Columbia, Canada, 2020.
-
-
-

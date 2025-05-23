@@ -58,3 +58,7 @@ tags:
 |11  | $\frac{\pi}{B}\text{sinc}(Bn),0<B<\pi$ | $\displaystyle\sum_{k=-\infty}^{\infty}\text{rect}\left(\frac{\Omega-2\pi k}{2B}\right)$ |
 |12  | $u(n) - u(n - M)$     | $\displaystyle e^{-j\Omega(M-1)/2}\frac{\sin(M\Omega/2)}{\sin(\Omega/2)}$ |
 |13  | $na^nu(n), \|a\| < 1$ | $\displaystyle\frac{ae^{j\Omega}}{(e^{j\Omega}-a)^2}$ |
+
+## Reference(s)
+
+- M. D. Adams, _Signals and Systems_, 3rd ed. The University of Victoria, Victoria, British Columbia, Canada, 2020.
