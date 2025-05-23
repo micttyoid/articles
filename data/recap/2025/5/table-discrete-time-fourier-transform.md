@@ -43,9 +43,9 @@ tags:
 
 ## Transform pairs for the Discrete-Time Fourier Transform
 
-|Pair| $x(n)$                | $X(\Omega)$ |
-| ---|-----------------------|-------------|
-|1   | $\delta(n)$           | $1$         |
+|Pair| $\mathbf{x(n)}$       | $\mathbf{X(\Omega)}$ |
+| ---|-----------------------|----------------------|
+|1   | $\delta(n)$           | $1$                  |
 |2   | $1$                   | $\displaystyle2\pi\sum_{k=-\infty}^{\infty}\delta(\Omega-2\pi k)$ |
 |3   | $u(n)$                | $\displaystyle\frac{e^{j\Omega}}{e^{j\Omega}-1} + \pi\sum_{k=-\infty}^{\infty}\delta(\Omega-2\pi k)$ |
 |4   | $a^nu(n),\|a\|<1$     | $\displaystyle\frac{e^{j\Omega}}{e^{j\Omega}-a}$ |
