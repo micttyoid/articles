@@ -18,4 +18,4 @@ tags:
 Databasoid for Promenade
 
 - [Latest blog](https://lukeyoo.fyi/blog/2025/5/bevy-post-startup-check)
-- [Latest recap](https://lukeyoo.fyi/recap/2025/5/table-discrete-time-fourier-transform)
+- [Latest recap](https://lukeyoo.fyi/recap/2025/5/x-first-search-examples)
