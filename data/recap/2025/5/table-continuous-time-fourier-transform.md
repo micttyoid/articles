@@ -71,8 +71,8 @@ tags:
 | 7 | $\sin(\omega_0 t)$| $\displaystyle\frac{\pi}{j}[\delta(\omega-\omega_0)-\delta(\omega+\omega_0)]$ |
 | 8 | $\text{rect}(\frac{t}{T})$      | $\displaystyle\|T\|\text{sinc}(\frac{T\omega}{2})$ |
 | 9 | $\displaystyle\frac{\|B\|}{\pi}\text{sinc}(Bt)$  | $\displaystyle\text{rect}(\frac{\omega}{2B})$ |
-| 10| $e^{-at}u(t),\,\text{Re}\lbrace a\rbrace > 0$ | $\displaystyle\frac{1}{a + j\omega}$ |
-| 11| $t^{n-1}e^{-at}u(t),\,\text{Re}\lbrace a\rbrace > 0$ | $\displaystyle\frac{(n-1)!}{(a + j\omega)^n}$ |
+| 10| $e^{-at}u(t),\ \text{Re}\lbrace a\rbrace > 0$ | $\displaystyle\frac{1}{a + j\omega}$ |
+| 11| $t^{n-1}e^{-at}u(t),\ \text{Re}\lbrace a\rbrace > 0$ | $\displaystyle\frac{(n-1)!}{(a + j\omega)^n}$ |
 | 12| $\displaystyle\text{tri}(\frac{t}{T})$ | $\displaystyle\frac{\|T\|}{2}\text{sinc}^2(\frac{T\omega}{4})$ |
 
 
