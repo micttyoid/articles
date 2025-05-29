@@ -10,6 +10,7 @@ author:
 tags:
   - 'Queueing theory'
   - 'Single-server queue'
+  - 'Simulation'
 ---
 
 # Single-server-queue
@@ -24,7 +25,7 @@ digraph G {
     MainEnd   [shape=none, label="", width=0, height=0];
     subgraph cluster_OuterBox {
         style="rounded";
-        label="Service Facility";
+        label="Service Facility (Node)";
         OuterBoxStart [shape=none label="" width=0, height=0];
         OuterBoxEnd   [shape=none label="" width=0, height=0];
         subgraph cluster_Queue {
@@ -60,7 +61,7 @@ digraph G {
 
 ## Common assumptions about queueing systems for analysis
 
-**Immediacy of service and departure**
+**Immediacy at service and departure**
 - If the server is free, ex. not already serving a customer, an arriving customer goes immediately into service. No time at all is spent in the queue.
 - When the server becomes free, a customer is chosen from the queue according to a scheduling policy and immediately enters into service. The time between the departure of one customer and the start of service of the next customer is zero.
 
