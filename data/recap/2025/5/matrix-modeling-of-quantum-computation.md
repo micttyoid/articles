@@ -28,58 +28,65 @@ where $U^\dag$ is the _Hermitian_ (_Hermitean_) _adjoint_ of $U$
 
 **QNOT**
 
-$\displaystyle
+```[latex]
 QNOT \equiv \begin{bmatrix}
    0 & 1 \\
    1 & 0
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 Same as Pauli-X (Pauli-1)
 
 **Rotation**
 
-$U_\theta \equiv \begin{bmatrix}
+```[latex]
+U_\theta \equiv \begin{bmatrix}
 \cos(\theta) & \sin(\theta) \\
 -\sin(\theta) & \cos(\theta)
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 **Square root of NOT**
 
-$\displaystyle
+```[latex]
 SRN \equiv \frac{1}{\sqrt{2}} \begin{bmatrix}
 1 & -1 \\
 1 & 1
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 **Hadamard**
 
-$\displaystyle
+```[latex]
 H \equiv \frac{1}{\sqrt{2}} \begin{bmatrix}
 1 & 1 \\
 1 & -1
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 ## Gates: 2-qubit example
 
 **Controlled phase**
 
-$\displaystyle
+```[latex]
 \text{CPHASE} \equiv \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & e^{i\phi}
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 **Swap**
 
-$\displaystyle
+```[latex]
 \text{SWAP} \equiv \begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1
-\end{bmatrix}$
+\end{bmatrix}
+```
 
 ## Reference(s)
 
