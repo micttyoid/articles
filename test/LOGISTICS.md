@@ -20,6 +20,8 @@ Examples:
 
 [https://lukeyoo.fyi/test/data/render/bpmn-example.md](https://lukeyoo.fyi/test/data/render/bpmn-example.md)
 
+[https://lukeyoo.fyi/test/data/render/graphviz-examples.md](https://lukeyoo.fyi/test/data/render/graphviz-examples.md)
+
 ## Live testing: syntax
 
 Example(s):
