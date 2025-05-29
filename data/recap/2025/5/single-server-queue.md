@@ -2,7 +2,7 @@
 title: 'Single-server queue'
 date-published: 2025-05-29
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-29
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -12,7 +12,9 @@ tags:
   - 'Single-server queue'
 ---
 
-## Single-server queue
+# Single-server-queue
+
+## Simple single-server queueing system
 
 ```[dot]
 digraph G {
@@ -56,6 +58,16 @@ digraph G {
 }
 ```
 
-# Reference(s)
+## Common assumptions about queueing systems for analysis
+
+**Immediacy of service and departure**
+- If the server is free, ex. not already serving a customer, an arriving customer goes immediately into service. No time at all is spent in the queue.
+- When the server becomes free, a customer is chosen from the queue according to a scheduling policy and immediately enters into service. The time between the departure of one customer and the start of service of the next customer is zero.
+
+**Perfectly patient customers**
+- If the server is not free (busy), then the customer joins a queue of waiting customers and stays in the queue until entering service.
+- Customers remain in the facility until their service is completed and then they depart. Customers do not become impatient and leave before they receive service.
+
+## Reference(s)
 
 - W. J. Stewart, _Probability, Markov Chains, Queues, and Simulation: The Mathematical Basis of Performance Modeling_. Princeton, NJ, USA: Princeton University Press, 2009.
