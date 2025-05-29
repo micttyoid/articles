@@ -2,7 +2,7 @@
 title: 'Heapsort'
 date-published: 2025-05-11
 date-drafted: null
-date-modified: null
+date-modified: 2025-05-29
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -43,6 +43,17 @@ BUILD-MAX-HEAP(A)
     A.heap-size = A.length
     for i = ⌊A.length / 2⌋ downto 1
         MAX-HEAPIFY(A, i)     
+```
+
+```pseudo
+PARENT(i)
+    return ⌊i/2⌋
+
+LEFT(i)
+    return 2i
+
+RIGHT(i)
+    return 2i + 1
 ```
 
 ## Reference(s)

@@ -13,6 +13,8 @@ tags:
 
 # Table of sorting algorithms
 
+## Well-known sorting algorithms and their running times
+
 | Algorithm      | Worst-case running time | Average-case/expected running time |
 | -------------- | ----------------------- | ---------------------------------- |
 | Insertion sort | $\Theta(n^2)$           | $\Theta(n^2)$                      |
