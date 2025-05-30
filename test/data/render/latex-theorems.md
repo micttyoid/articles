@@ -1,4 +1,4 @@
-# Test data: Latex - Theorems
+# Test data: Latex - theorems
 
 ## By syntax
 

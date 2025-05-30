@@ -1,4 +1,4 @@
-# Test data: Packetdiag - Example
+# Test data: Packetdiag - example
 
 **Syntax**
 

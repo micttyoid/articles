@@ -1,4 +1,4 @@
-# Test data: C4 PlantUML - Example
+# Test data: C4 PlantUML - example
 
 **Syntax**
 

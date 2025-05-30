@@ -1,4 +1,4 @@
-# Test data: Pikchr - Example
+# Test data: Pikchr - example
 
 **Syntax**
 

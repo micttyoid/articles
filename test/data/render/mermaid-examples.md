@@ -1,4 +1,4 @@
-# Test data: Mermaid - Examples
+# Test data: Mermaid - examples
 
 ## Basic Pie Chart
 

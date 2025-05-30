@@ -1,4 +1,4 @@
-# Test data: BPMN - Example
+# Test data: BPMN - example
 
 **Syntax**
 
