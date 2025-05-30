@@ -2,7 +2,7 @@
 title: "Note on introductory linear algebra"
 date-published: null
 date-drafted: 2025-05-22
-date-modified: null
+date-modified: 2025-05-30
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -13,11 +13,15 @@ tags:
 
 # Note on introductory linear algebra
 
+**Table of Contents**
+- [TODO](#todo)
+- [Inverses and Transpose](#inverses-and-transpose)
+- [Other techniques](#other-techniques)
+
 ## TODO
 
-[other topic]
-
-[Strang seems not covering some intro application]
+Other topic:
+- some intro application from other reference
 
 ## Inverses and Transpose
 
@@ -69,13 +73,9 @@ $A$ is symmetric and invertible $\implies A^{-1}$ is symmetric
 
 For any matrix $R, \medspace$ if $A = R^{T}R, \medspace$ then $A^{-1}$ is symmetric
 
+## Other techniques
 
-
-
-
-
-
-
+TODO: Augmented matrix with linear example
 
 ## Reference(s)
 
