@@ -48,6 +48,8 @@ Rel(application, database, "", "TCP/IP")
 
 ### Deployment
 
+TODO: pipeline, devlet, adminlet
+
 ```[c4plantuml]
 @startuml
 !theme C4_green from https://raw.githubusercontent.com/micttyoid/articles/main/share/c4puml/themes
@@ -100,7 +102,14 @@ Rel(clientN, lb, "")
 @enduml
 ```
 
-## Additional property and design change
+## Others
+
+### Additional property and design change
 
 Additional constraint such as high performance or high interactivity does not
 come with a big difference at the container/deployment level of design.
+
+### Deployment strategy
+
+It is mostly deducible. For example, blue-green scheme can be obtain by coloring 
+two clusters and enabling only another of them at each update.
