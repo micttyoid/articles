@@ -111,5 +111,5 @@ come with a big difference at the container/deployment level of design.
 
 ### Deployment strategy
 
-It is mostly deducible. For example, blue-green scheme can be obtain by coloring 
-two clusters and enabling only another of them at each update.
+It is mostly deducible. For example, blue-green scheme can be obtained by 
+coloring two clusters and enabling only another of them at each update.
