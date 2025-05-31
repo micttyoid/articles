@@ -26,6 +26,8 @@ Examples:
 
 Example(s):
 
+[https://lukeyoo.fyi/test/data/syntax/wat-examples.md](https://lukeyoo.fyi/test/data/syntax/wat-examples.md)
+
 [https://lukeyoo.fyi/test/data/syntax/go-examples.md](https://lukeyoo.fyi/test/data/syntax/go-examples.md)
 
 [https://lukeyoo.fyi/test/data/syntax/swift-example.md](https://lukeyoo.fyi/test/data/syntax/swift-example.md)
