@@ -22,7 +22,7 @@ tags:
 !theme C4_green from https://raw.githubusercontent.com/micttyoid/articles/main/share/c4puml/themes
 !include https://raw.githubusercontent.com/micttyoid/articles/main/share/c4puml/C4_Container.puml
 
-' LAYOUT_WITH_LEGEND()
+LAYOUT_WITH_LEGEND()
 
 title Container view: Minimal distributed real-time system
 
@@ -54,7 +54,7 @@ Rel(application, database, "", "TCP/IP")
 !include https://raw.githubusercontent.com/micttyoid/articles/main/share/c4puml/C4_Container.puml
 !include https://raw.githubusercontent.com/micttyoid/articles/main/share/c4puml/C4_Deployment.puml
 
-' LAYOUT_WITH_LEGEND()
+LAYOUT_WITH_LEGEND()
 
 title Deployment view: Minimal distributed real-time system
 
