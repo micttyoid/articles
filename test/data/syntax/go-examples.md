@@ -1,4 +1,4 @@
-# Test data: Go - Examples
+# Test data: Go examples
 
 ## Example: hello world
 
