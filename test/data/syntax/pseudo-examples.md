@@ -1,4 +1,4 @@
-# Test data: Pseudo - Examples
+# Test data: Pseudo examples
 
 ## Loosen codepoint 1
 
