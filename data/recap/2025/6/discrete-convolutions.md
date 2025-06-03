@@ -30,7 +30,7 @@ tags:
 \\&
 \enspace\:\,= \mathbf{X} \ast \mathbf{K} + \mathbf{B}
 \\&
-\qquad \text{where} \enspace y_{ij} = \sum_{l,k \in \Delta}\Delta_{i,j}\mathbb{X} \odot \mathbf{K}
+\qquad \text{where} \enspace y_{ij} = \sum_{l,k \in \Delta}\Delta_{ij}\mathbb{X} \odot \mathbf{K}
 \end{align*}
 ```
 
