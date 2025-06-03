@@ -2,7 +2,7 @@
 title: "Discrete convolutions"
 date-published: 2025-06-02
 date-drafted: null
-date-modified: null
+date-modified: 2025-06-03
 author:
   - name: "Luke Yoo"
   - email: w.lukeyoo@gmail.com
@@ -17,7 +17,32 @@ tags:
 
 # Discrete convolutions
 
-## CNN-style convolution
+## Table of Content
+
+- [LTI context](#lti-context)
+- [CNN context](#cnn-context)
+
+## LTI context
+
+**Definition**
+
+```[latex]
+f \ast g \lparen n\rparen = \sum_{k=-\infty}^{\infty}f\lparen k\rparen  g \lparen n-k\rparen
+```
+
+The function $g(n)$ is typically the impulse $h(n)$ in the application.
+
+**Procedure**
+
+```pseudo
+LTI-CONVOLUTION(n, F, G)
+    y = 0
+    for k = -∞ to ∞
+        y += F(k) * G(n - k) // MATLAB folks habitually vectorize them
+    return y
+```
+
+## CNN context
 
 ### Example: 2D single-layer
 
@@ -37,7 +62,7 @@ tags:
 **Procedure**
 
 ```pseudo
-CONV(x, k, stride=1, padding=0)
+CNN-CONVOLUTION(x, k, stride=1, padding=0)
     y_h = ⌊(x.height + 2*padding - k.height) / stride⌋ + 1
     y_w = ⌊(x.width + 2*padding - k.width) / stride⌋ + 1
     y = INIT-WITH-ZEROS(y_h, y_w) // Comes with y.width, y.height
