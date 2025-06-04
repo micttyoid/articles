@@ -48,7 +48,7 @@ For two-dimensional input data $f(m,n)$ of size $M \times N$
 
 ## Fast Fourier Tranform (Danielson-Lanczos lemma)
 
-Using the 1-D DFT given the input data $f(n)$ of length $N$
+Using the 1D DFT, given the input data $f(n)$ of length $N$
 
 ```[latex]
 \begin{align*}
