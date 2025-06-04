@@ -28,6 +28,7 @@ For one-dimensional input data $f(n)$ of length $N$
 \\
 &\text{ }\:
 \text{IDTF}\{F(k)\} = \frac{1}{N} \sum_{k=0}^{N-1} F(k) e^{\frac{j2\pi \ k n}{N}} \quad\text{where}\enspace n \in [0 .. N-1]
+\end{align*}
 ```
 
 ## Discrete Fourier Tranform and its Inverse: 2D
@@ -41,7 +42,8 @@ For two-dimensional input data $f(m,n)$ of size $M \times N$
 \text{DFT}\{f(m,n)\} = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} f(m,n) e^{-j2\pi(\frac{um}{M} + \frac{vn}{N})} \quad\text{where}\enspace u \in [0..M-1], v\in [0..N-1]
 \\
 &\text{ }\:
-\displaystyle \text{IDFT}\{F(u,v)\} = \frac{1}{MN} \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} F(u,v) e^{j2\pi(\frac{ux}{M} + \frac{vy}{N})} \quad\text{where}\enspace m \in [0..M-1], n\in [0..N-1]
+\text{IDFT}\{F(u,v)\} = \frac{1}{MN} \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} F(u,v) e^{j2\pi(\frac{ux}{M} + \frac{vy}{N})} \quad\text{where}\enspace m \in [0..M-1], n\in [0..N-1]
+\end{align*}
 ```
 
 ## Fast Fourier Tranform (Danielson-Lanczos lemma)
