@@ -15,9 +15,9 @@ tags:
 
 # Fast Fourier Transform
 
-## Butterfly flow representation of Danielson–Lanczos lemma
+## Butterfly flow representation
 
-Which is a radix-2 case of Cooley–Tukey
+Which is a radix-2 case of Danielson–Lanczos lemma
 
 ```[dot]
 digraph Butterfly {
