@@ -89,7 +89,7 @@ WINDOW(x, k, i, j, stride=1)
 
 ## FFT-based convolution
 
-Meaning it takes a **multiplication** in the second domain and inverse it
+Meaning it takes a **multiplication** in the second domain and inverses it
 
 ```[dot]
 digraph G {
