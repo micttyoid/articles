@@ -25,7 +25,7 @@ digraph Butterfly {
     node [shape=none fixedsize=true width=0.5 height=0.8 fontsize=9.0 margin=0.0];
     edge [penwidth=0.7 arrowsize=0.5]
     
-    C [label="⊕" fontsize=10.0];
+    C [label="⊕" fontsize=10.0 width=0.15];
     
     L1 [label="DTFe"];
     L2 [label="DTFo"];
