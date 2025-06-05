@@ -44,11 +44,43 @@ digraph Butterfly {
 }
 ```
 
+Or by dragging adders to the node, for example, in DIT
+
+```[dot]
+digraph Butterfly {
+    rankdir="LR"
+    node [shape="plaintext" fixedsize=true width=0.35 height=0.65 fontsize=10.0 margin=0];
+    edge [penwidth=0.5 arrowsize=0.25 fontsize=4.0]
+    
+    //C [shape="" width=0.2 height=0.2 label="+" fontsize=14.0];
+    
+    L1 [label="Ⓔ"];
+    L2 [label="Ⓞ"];
+
+    R1 [label="⊕"];
+    R2 [label="⊕"];
+    
+    
+    //L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
+    L1 -> R2 [arrowhead="" ];
+    
+    //L2 -> C [arrowhead="none" fontsize=11.0 label="+W"];
+    L2 -> R1 [arrowhead="" label="                   +W"];
+    
+    L1 -> R1;
+    L2 -> R2[label="                   -W"];
+     
+    
+    {rank=same; L1; L2;}
+    {rank=same; R1; R2;}
+}
+```
+
 ## Recursive procedure
 
 ```pseudo
 FFT(N,f)
-    if N == 2                               // Stage 1
+    if N == 2                               // Stage 1: W[n] = 1
         f[0] = f[0] + f[1]
         f[1] = f[0] - f[1]
     else
@@ -56,6 +88,6 @@ FFT(N,f)
         h = f[odd  ∈ N]
         FFT(N/2, g)
         FFT(N/2, h)
-        for n = 0 to N-1                    // Stage 2
+        for n = 0 to N-1                    // Stage log2(N)
             f[n] = g[n] + W[n]h[n]
 ```
