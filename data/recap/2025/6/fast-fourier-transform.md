@@ -44,7 +44,7 @@ digraph Butterfly {
 }
 ```
 
-Or by dragging adders to the node, for example, in DIT
+Or by dragging adders to the nodes, for example, in DIT
 
 ```[dot]
 digraph Butterfly {
