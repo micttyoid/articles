@@ -61,14 +61,15 @@ digraph Butterfly {
     R2 [label="⊕"];
     
     
-    //L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
-    L1 -> R2 [arrowhead="" ];
-    
+
+    L1 -> R2 [arrowhead="" label=""];
     //L2 -> C [arrowhead="none" fontsize=11.0 label="+W"];
-    L2 -> R1 [arrowhead="" label="                    +W"];
+    L2 -> R1 [arrowhead="" label="                                                        +W"];
+        //L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
+
     
-    L1 -> R1;
-    L2 -> R2[label="                    -W"];
+    L1 -> R1 [arrowhead="" label=" "];
+    L2 -> R2[label="                                                                   -W"];
      
     
     {rank=same; L1; L2;}
