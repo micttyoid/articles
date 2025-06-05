@@ -43,3 +43,19 @@ digraph Butterfly {
     {rank=same; R1; R2;}
 }
 ```
+
+## Recursive procedure
+
+```pseudo
+FFT(N,f)
+    if N == 2                               // Stage 1
+        f[0] = f[0] + f[1]
+        f[1] = f[0] - f[1]
+    else
+        g = f[even ∈ N]
+        h = f[odd  ∈ N]
+        FFT(N/2, g)
+        FFT(N/2, h)
+        for n = 0 to N-1                    // Stage 2
+            f[n] = g[n] + W[n]h[n]
+```
