@@ -22,10 +22,10 @@ Which is a radix-2 case of Cooley–Tukey
 ```[dot]
 digraph Butterfly {
     rankdir="LR"
-    node [shape=none fixedsize=true width=0.2 height=0.45 fontsize=4.0];
-    edge [penwidth=0.5 arrowsize=0.25]
+    node [shape=none fixedsize=true width=0.5 height=0.8 fontsize=9.0 margin=0.0];
+    edge [penwidth=0.7 arrowsize=0.5]
     
-    C [label="⊕" fontsize=6.0];
+    C [label="⊕" fontsize=10.0];
     
     L1 [label="DTFe"];
     L2 [label="DTFo"];
@@ -33,10 +33,10 @@ digraph Butterfly {
     R1 [label="DFT n"];
     R2 [label="DFT n+N/2"];
     
-    L1 -> C [arrowhead="none" fontsize=5.0 label="nada!"];
+    L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
     C -> R2 [arrowhead=""];
     
-    L2 -> C [arrowhead="none" fontsize=5.0 label="±W"];
+    L2 -> C [arrowhead="none" fontsize=8.0 label="±W"];
     C -> R1 [arrowhead=""];
     
     {rank=same; L1; L2;}
