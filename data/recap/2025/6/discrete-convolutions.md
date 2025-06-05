@@ -21,6 +21,7 @@ tags:
 
 - [LTI context](#lti-context)
 - [CNN context](#cnn-context)
+- [FFT-based convolution](#fft-based-convolution)
 
 ## LTI context
 
