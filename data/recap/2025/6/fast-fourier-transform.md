@@ -49,7 +49,7 @@ Or by dragging adders to the node, for example, in DIT
 ```[dot]
 digraph Butterfly {
     rankdir="LR"
-    node [shape="plaintext" fixedsize=true width=0.35 height=0.75 fontsize=10.0 margin=0];
+    node [shape="plaintext" fixedsize=true width=0.35 height=0.55 fontsize=10.0 margin=0];
     edge [penwidth=0.5 arrowsize=0.25 fontsize=6.0]
     
     //C [shape="" width=0.2 height=0.2 label="+" fontsize=14.0];
@@ -64,12 +64,12 @@ digraph Butterfly {
 
     L1 -> R2 [arrowhead="" label=""];
     //L2 -> C [arrowhead="none" fontsize=11.0 label="+W"];
-    L2 -> R1 [arrowhead="" label="                                                        +W"];
+    L2 -> R1 [arrowhead="" label="" headlabel = "+W"];
         //L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
 
     
-    L1 -> R1 [arrowhead="" label=" "];
-    L2 -> R2[label="                                                                   -W"];
+    L1 -> R1 [arrowhead="" label=" " ];
+    L2 -> R2[headlabel = "-W"];
      
     
     {rank=same; L1; L2;}
