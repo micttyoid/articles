@@ -52,26 +52,18 @@ digraph Butterfly {
     node [shape="plaintext" fixedsize=true width=0.35 height=0.55 fontsize=10.0 margin=0];
     edge [penwidth=0.5 arrowsize=0.25 fontsize=6.0]
     
-    //C [shape="" width=0.2 height=0.2 label="+" fontsize=14.0];
-    
     L1 [label="Ⓔ"];
     L2 [label="Ⓞ"];
 
     R1 [label="⊕"];
     R2 [label="⊕"];
     
-    
-
     L1 -> R2 [arrowhead="" label=""];
-    //L2 -> C [arrowhead="none" fontsize=11.0 label="+W"];
     L2 -> R1 [arrowhead="" label="" headlabel = "+W"];
-        //L1 -> C [arrowhead="none" fontsize=8.0 label="nada!"];
-
     
     L1 -> R1 [arrowhead="" label=" " ];
     L2 -> R2[headlabel = "-W"];
      
-    
     {rank=same; L1; L2;}
     {rank=same; R1; R2;}
 }
@@ -89,6 +81,6 @@ FFT(N,f)
         h = f[odd  ∈ N]
         FFT(N/2, g)
         FFT(N/2, h)
-        for n = 0 to N-1                    // Stage log2(N)
+        for n = 0 to N-1                    // Stage lg(N)
             f[n] = g[n] + W[n]h[n]
 ```
