@@ -1,5 +1,5 @@
 ---
-title: "Registry system for packages"
+title: "Registry system for package management"
 date-published: 2025-06-09
 date-drafted: null
 date-modified: null
@@ -14,7 +14,7 @@ tags:
   - "Package"
 ---
 
-# Registry system for packages
+# Registry system for package management
 
 ## Overview
 
