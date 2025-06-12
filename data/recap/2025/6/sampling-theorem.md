@@ -20,6 +20,7 @@ tags:
 
 # Sampling theorem
 
+Table of contents
 - [Sampling theorem: bandlimit version](#sampling-theorem-bandlimit-version)
 - [Sampling theorem: plain English version](#sampling-theorem-plain-english-version)
 - [Sampling theorem: B version](#sampling-theorem-b-version)
