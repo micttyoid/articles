@@ -34,7 +34,7 @@ If the condition is true, this holds
 x(t) = \sum_{n=-\infty}^{\infty} y(n)\,\operatorname{sinc}\left(\frac{\pi}{T}(t - Tn)\right)
 ```
 
-## Sampling theorem: plain english
+## Sampling theorem: plain English
 
 The sampling frequency should be at least twice the highest frequency contained in the signal.
 
