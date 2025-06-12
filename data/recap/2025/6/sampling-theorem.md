@@ -2,7 +2,7 @@
 title: "Sampling theorem"
 date-published: 2025-06-12
 date-drafted: null
-date-modified: null
+date-modified: 2025-06-12
 author:
   - name: "Luke Yoo"
   - email: w.lukeyoo@gmail.com
@@ -25,13 +25,13 @@ tags:
 **Theorem** Let $x$ be a function with the Fourier transform $X$, and let $y$ be the sequence resulting from the periodic sampling of $x$ with the sampling period $T$. Suppose that $|X(\omega)| = 0$ for all $|\omega| > \omega_M$. Then, $x$ is uniquely determined by $y$ if
 
 ```[latex]
-\omega_s > 2\omega_M \qquad$ where $\omega_s = \frac{2\pi}{T}
+\omega_s > 2\omega_M \qquad \text{where} \omega_s = \frac{2\pi}{T}
 ```
 
 If the condition is true, this holds
 
 ```[latex]
-x(t) = \sum_{n=-\infty}^{\infty} y(n) \operatorname{sinc}\left(\frac{\pi}{T}(t - Tn)\right)
+x(t) = \sum_{n=-\infty}^{\infty} y(n)\,\operatorname{sinc}\left(\frac{\pi}{T}(t - Tn)\right)
 ```
 
 ## Sampling theorem: plain english
