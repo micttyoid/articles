@@ -2,7 +2,7 @@
 title: "Transformer architectures: variations and derivatives"
 date-published: null
 date-drafted: 2025-06-12
-date-modified: null
+date-modified: 2025-06-12
 author:
   - name: "Luke Yoo"
   - email: w.lukeyoo@gmail.com
@@ -15,7 +15,7 @@ tags:
 
 # Transformer architectures: variations and derivatives
 
-**DRAFT**
+**NOTE**: THIS IS A MERE **DRAFT**
 
 **Transformer what I refer to here**: self-attention with encoder/decoder (+ computations)
 
