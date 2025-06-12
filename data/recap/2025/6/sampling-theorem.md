@@ -20,7 +20,14 @@ tags:
 
 # Sampling theorem
 
-## Sampling theorem: with bandlimit
+- [Sampling theorem: bandlimit version](#sampling-theorem-bandlimit-version)
+- [Sampling theorem: plain English version](#sampling-theorem-plain-english-version)
+- [Sampling theorem: B version](#sampling-theorem-b-version)
+- [Common symbols and notations](#common-symbols-and-notations)
+- [Terms that are often named](#terms-that-are-often-named)
+- [Reference(s)](#references)
+
+## Sampling theorem: bandlimit version
 
 **Theorem** Let $x$ be a function with the Fourier transform $X$, and let $y$ be the sequence resulting from the periodic sampling of $x$ with the sampling period $T$. Suppose that $|X(\omega)| = 0$ for all $|\omega| > \omega_M$. Then, $x$ is uniquely determined by $y$ if
 
@@ -34,11 +41,11 @@ If the condition is true, this holds
 x(t) = \sum_{n=-\infty}^{\infty} y(n)\,\operatorname{sinc}\left(\frac{\pi}{T}(t - Tn)\right)
 ```
 
-## Sampling theorem: plain English
+## Sampling theorem: plain English version
 
 The sampling frequency should be at least twice the highest frequency contained in the signal.
 
-## Sampling theorem: B style
+## Sampling theorem: B version
 
 **Theorem** If a function $x(t)$ contains no frequencies higher than $B$ hertz, then it can be completely determined from its ordinates at a sequence of points spaced less than $\frac{1}{2B}$ seconds apart.
 
