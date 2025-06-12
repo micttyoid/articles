@@ -25,7 +25,7 @@ tags:
 **Theorem** Let $x$ be a function with the Fourier transform $X$, and let $y$ be the sequence resulting from the periodic sampling of $x$ with the sampling period $T$. Suppose that $|X(\omega)| = 0$ for all $|\omega| > \omega_M$. Then, $x$ is uniquely determined by $y$ if
 
 ```[latex]
-\omega_s > 2\omega_M \qquad \text{where} \omega_s = \frac{2\pi}{T}
+\omega_s > 2\omega_M \qquad\text{where}\medspace \omega_s = \frac{2\pi}{T}
 ```
 
 If the condition is true, this holds
