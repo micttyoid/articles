@@ -27,6 +27,8 @@ Which is a particular case of Taylor series where $a = 0$
 \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + \cdots
 ```
 
+Use: pick some terms and proceed
+
 ## Trigonometry with calculus
 
 Often used for problems in optics
