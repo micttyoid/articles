@@ -32,9 +32,14 @@ Which is a particular case of Taylor series where $a = 0$
 Often used for problems in optics
 
 ```[latex]
+\begin{align*}
+\\
+&\text{ }\: 
 \lim_{\theta\to 0}{\frac {\sin\theta}{\theta} = 1}
 \\
+&\text{ }\: 
 \lim_{\theta\to 0}{\frac {\tan\theta}{\theta} = 1}
+\end{align*}
 ```
 
 **L'Hôpital's rule**
