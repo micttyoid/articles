@@ -1,8 +1,8 @@
 ---
-title: "Bases of classic approximation methods"
+title: "Bases of simple approximation methods"
 date-published: 2025-06-13
 date-drafted: null
-date-modified: null
+date-modified: 2025-06-13
 author:
   - name: "Luke Yoo"
   - email: w.lukeyoo@gmail.com
@@ -11,7 +11,7 @@ tags:
   - "Approximation"
 ---
 
-# Bases of classic approximation methods
+# Bases of simple approximation methods
 
 ## Maclaurin series
 
