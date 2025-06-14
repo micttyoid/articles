@@ -128,7 +128,7 @@ TOOD: some mention of LLM
 
 ## Reference(s)
 
-- A. Radford. el al. Improving Language Understanding by Generative Pre-Training. _OpenAI preprint_, 2018.
+- A. Radford. el al. Improving Language Understanding by Generative Pre-Training. _OpenAI preprint [language_understanding_paper](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)_, 2018.
 - A. Vaswani et al. Attention Is All You Need. [_Advances in Neural Information Processing Systems_, 30](https://papers.nips.cc/paper/2017), 2017. or _[arXiv:1706.03762](https://doi.org/10.48550/arXiv.1706.03762)_, 2017.
 - C. Raffel et al. Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. _arXiv preprint [arXiv:1910.10683](https://doi.org/10.48550/arXiv.1910.10683)_, 2019.
 - H. Touvron. LLaMA: Open and Efficient Foundation Language Models. _arXiv preprint [arXiv:2302.13971](https://doi.org/10.48550/arXiv.2302.13971)_, 2023.
