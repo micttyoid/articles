@@ -21,13 +21,17 @@ Which is a particular case of Taylor series where $a = 0$
 \sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}(x-0)^n = f(0) + f'(0)(x-0) + \frac{f''(0)}{2!}(x-0)^2 + \cdots + \frac{f^{(n)}(0)}{n!}(x-0)^n + \cdots
 ```
 
-**Taylor series**
+Use: pick some terms and proceed
+
+## Taylor series
 
 ```[latex]
 \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + \cdots
 ```
 
 Use: pick some terms and proceed
+
+Example: binomial approximation
 
 ## Trigonometry with calculus
 
@@ -51,3 +55,20 @@ Often used for problems in optics
 ```
 
 Example: Small-angle approximation
+
+## The Central Limit Theorem
+
+The Central Limit Theorem
+
+Let $X_1,X_2,...,X_n$ be i.i.d. random variables with expected value $EX_i=\mu<\infty$ and variance $0<\text{Var}(X_i)=\sigma^2<\infty$. Then, the random variable
+
+```[latex]
+Z_n=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}=\frac{X_1+X_2+...+X_n-n\mu}{\sqrt{n}\sigma}
+```
+converges in distribution to the standard normal random variable as $n$ goes to infinity, that is
+
+```[latex]
+\lim_{n\to\infty}P(Z_n\leq x)=\Phi(x) \quad\text{, for all } x\in\mathbb{R}
+```
+
+where $\Phi(x)$ is the standard normal CDF.
