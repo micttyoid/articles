@@ -14,10 +14,19 @@ tags:
 # Bases of simple approximation methods
 
 ## Table of Contents
+- [Euler's method](#eulers-method)
 - [Maclaurin series](#maclaurin-series)
 - [Taylor series](#taylor-series)
 - [The Central Limit Theorem](#the-central-limit-theorem)
 - [Trigonometry](#trigonometry)
+
+## Euler's method
+
+```[latex]
+y_{n+1} = y_n + h f(t_n, y_n)
+```
+
+Use: iterate few times or more and proceed
 
 ## Maclaurin series
 
