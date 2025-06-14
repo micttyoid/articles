@@ -78,6 +78,8 @@ Often used for problems in optics
 \end{align*}
 ```
 
+Use: set some threhold and let them equal for all tolerable cases
+
 **L'Hôpital's rule**
 
 ```[latex]
