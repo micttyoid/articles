@@ -9,6 +9,7 @@ author:
   - website1: https://github.com/micttyoid
 tags:
   - "Approximation"
+  - "Computation"
 ---
 
 # Bases of simple approximation methods
