@@ -129,8 +129,13 @@ TOOD: some mention of LLM
 ## Reference(s)
 
 - A. Vaswani et al. Attention Is All You Need. [_Advances in Neural Information Processing Systems_, 30](https://papers.nips.cc/paper/2017), 2017. or _[arXiv:1706.03762](https://doi.org/10.48550/arXiv.1706.03762)_, 2017.
-- Z. Lan et al. ALBERT: A Lite BERT for Self-supervised Learning of Language Representations. _arXiv preprint [arXiv:1909.11942](  
-https://doi.org/10.48550/arXiv.1909.11942)_, 2019.
+- C. Raffel et al. Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. _arXiv preprint [arXiv:1910.10683](https://doi.org/10.48550/arXiv.1910.10683)_, 2019.
+- H. Touvron. LLaMA: Open and Efficient Foundation Language Models. _arXiv preprint [arXiv:2302.13971](https://doi.org/10.48550/arXiv.2302.13971)_, 2023.
+- K. Clark et al. ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators. _arXiv preprint [arXiv:2003.10555](https://doi.org/10.48550/arXiv.2003.10555)_, 2020.
+- L. Xue et al. ByT5: Towards a token-free future with pre-trained byte-to-byte models. _arXiv preprint [arXiv:2105.13626](https://doi.org/10.48550/arXiv.2105.13626)_, 2021.
+- M. Lewis el al. BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. _arXiv preprint [arXiv:1910.13461](https://doi.org/10.48550/arXiv.1910.13461)_, 2019.
+- V. Sanh et al. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. _arXiv preprint [arXiv:1910.01108](https://doi.org/10.48550/arXiv.1910.01108)_, 2019.
 - Y. Liu et al. RoBERTa: A Robustly Optimized BERT Pretraining Approach. _arXiv preprint [arXiv:1907.11692](  
 https://doi.org/10.48550/arXiv.1907.11692
 )_, 2019.
+- Z. Lan et al. ALBERT: A Lite BERT for Self-supervised Learning of Language Representations. _arXiv preprint [arXiv:1909.11942](https://doi.org/10.48550/arXiv.1909.11942)_, 2019.
