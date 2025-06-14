@@ -13,6 +13,12 @@ tags:
 
 # Bases of simple approximation methods
 
+## Table of Contents
+- [Maclaurin series](#maclaurin-series)
+- [Taylor series](#taylor-series)
+- [The Central Limit Theorem](#the-central-limit-theorem)
+- [Trigonometry](#trigonometry)
+
 ## Maclaurin series
 
 Which is a particular case of Taylor series where $a = 0$
@@ -33,7 +39,22 @@ Use: pick some terms and proceed
 
 Example: binomial approximation
 
-## Trigonometry with calculus
+## The Central Limit Theorem
+
+Let $X_1,X_2,...,X_n$ be i.i.d. random variables with expected value $EX_i=\mu<\infty$ and variance $0<\text{Var}(X_i)=\sigma^2<\infty$. Then, the random variable
+
+```[latex]
+Z_n=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}=\frac{X_1+X_2+...+X_n-n\mu}{\sqrt{n}\sigma}
+```
+converges in distribution to the standard normal random variable as $n$ goes to infinity, that is
+
+```[latex]
+\lim_{n\to\infty}P(Z_n\leq x)=\Phi(x) \quad\text{, for all } x\in\mathbb{R}
+```
+
+where $\Phi(x)$ is the standard normal CDF.
+
+## Trigonometry
 
 Often used for problems in optics
 
@@ -56,17 +77,5 @@ Often used for problems in optics
 
 Example: Small-angle approximation
 
-## The Central Limit Theorem
-
-Let $X_1,X_2,...,X_n$ be i.i.d. random variables with expected value $EX_i=\mu<\infty$ and variance $0<\text{Var}(X_i)=\sigma^2<\infty$. Then, the random variable
-
-```[latex]
-Z_n=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}=\frac{X_1+X_2+...+X_n-n\mu}{\sqrt{n}\sigma}
-```
-converges in distribution to the standard normal random variable as $n$ goes to infinity, that is
-
-```[latex]
-\lim_{n\to\infty}P(Z_n\leq x)=\Phi(x) \quad\text{, for all } x\in\mathbb{R}
-```
-
-where $\Phi(x)$ is the standard normal CDF.
+## TODO
+- Some generating functions(one or two)
