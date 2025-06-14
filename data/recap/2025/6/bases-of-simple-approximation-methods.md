@@ -58,8 +58,6 @@ Example: Small-angle approximation
 
 ## The Central Limit Theorem
 
-The Central Limit Theorem
-
 Let $X_1,X_2,...,X_n$ be i.i.d. random variables with expected value $EX_i=\mu<\infty$ and variance $0<\text{Var}(X_i)=\sigma^2<\infty$. Then, the random variable
 
 ```[latex]
