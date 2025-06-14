@@ -128,4 +128,9 @@ TOOD: some mention of LLM
 
 ## Reference(s)
 
-- Vaswani, A., et al. Attention Is All You Need. arXiv:1706.03762, 2017.
+- A. Vaswani et al. Attention Is All You Need. [_Advances in Neural Information Processing Systems_, 30](https://papers.nips.cc/paper/2017), 2017. or _[arXiv:1706.03762](https://doi.org/10.48550/arXiv.1706.03762)_, 2017.
+- Z. Lan et al. ALBERT: A Lite BERT for Self-supervised Learning of Language Representations. _arXiv preprint [arXiv:1909.11942](  
+https://doi.org/10.48550/arXiv.1909.11942)_, 2019.
+- Y. Liu et al. RoBERTa: A Robustly Optimized BERT Pretraining Approach. _arXiv preprint [arXiv:1907.11692](  
+https://doi.org/10.48550/arXiv.1907.11692
+)_, 2019.
