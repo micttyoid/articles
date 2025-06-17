@@ -24,6 +24,7 @@ sudo apt install ros-kilted-desktop
 ---
 title: Ecosystem
 ---
+%%{init: {'theme':'neutral'}}%%
 flowchart LR
 
 A("**Plumbing**
@@ -58,6 +59,9 @@ sudo apt install ros-dev-tools
 ```
 
 **Capabilities**
+
+TODO: maybe real examples
+
 
 ## Common development workflow
 
