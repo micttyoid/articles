@@ -20,7 +20,7 @@ sudo apt install ros-kilted-desktop
 
 ## The Ecosystem
 
-```mermaid
+```[mermaid]
 ---
 title: Ecosystem
 ---
