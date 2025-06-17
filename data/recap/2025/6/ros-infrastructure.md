@@ -96,7 +96,8 @@ Treatment to the arbitrary set of sensor, actuator, and controller
 [**Meta operating system**](https://github.com/ros2/ros2) ci to cook up images;
 contains list of repositories.
 
-**Object Management Group (OMG)** Organization who publishes relavant specifications.
+[**Object Management Group (OMG)**](https://www.omg.org/)
+Organization who publishes relavant specifications.
 
 **ROS** one of the followings:
 - The ROS meta operating system
