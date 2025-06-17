@@ -23,14 +23,11 @@ sudo apt install ros-kilted-desktop
 ```[mermaid]
 flowchart LR
 
-A("**Plumbing**
-middleware, messaging system")
+A("**Plumbing**\nmiddleware, messaging system")
 
-C("**Tooling** 
-debugging, visualization, logging")
+C("**Tooling**\ndebugging, visualization, logging")
 
-D("**Capabilities**
-application / product")
+D("**Capabilities**\napplication / product")
 
 A <--> C
 C <--> D
