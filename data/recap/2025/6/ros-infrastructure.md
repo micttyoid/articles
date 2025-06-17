@@ -103,7 +103,7 @@ Organization who publishes relavant specifications.
 - The ROS meta operating system
 - The framework
 
-[**ROS Enhancement Proposals(Rep)**](https://ros.org/reps/rep-0000.html)
+[**ROS Enhancement Proposals (Rep)**](https://ros.org/reps/rep-0000.html)
 similar to RFC
 
 [**Tier 1 operating systems**](https://www.ros.org/reps/rep-2000.html#id39)
