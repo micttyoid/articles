@@ -21,10 +21,6 @@ sudo apt install ros-kilted-desktop
 ## The Ecosystem
 
 ```[mermaid]
----
-title: Ecosystem
----
-%%{init: {'theme':'neutral'}}%%
 flowchart LR
 
 A("**Plumbing**
