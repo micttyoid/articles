@@ -1,7 +1,7 @@
 ---
 title: "README.md - Articles"
 date-published: 2025-03-31
-date-modified: 2025-06-16
+date-modified: 2025-06-18
 author:
   - name: Luke Yoo
   - email: w.lukeyoo@gmail.com
@@ -18,4 +18,4 @@ tags:
 Databasoid for Promenade
 
 - [Latest blog](https://lukeyoo.fyi/blog/2025/5/bevy-post-startup-check)
-- [Latest recap](https://lukeyoo.fyi/recap/2025/6/ros-infrastructure)
+- [Latest recap](https://lukeyoo.fyi/recap/2025/6/feedback-control-system)
