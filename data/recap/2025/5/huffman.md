@@ -2,7 +2,7 @@
 title: 'Huffman codes'
 date-published: 2025-05-13
 date-drafted: null
-date-modified: 2025-05-16
+date-modified: 2025-06-08
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -30,7 +30,7 @@ HUFFMAN(C)
     return EXTRACT-MIN(Q)
 ```
 
-## Common options of implementation
+## Common options for implementation
 
 - [mean-heap](https://lukeyoo.fyi/recap/2025/5/mean-heap): `O(n log n)`
 - [van Emde Boas](https://lukeyoo.fyi/recap/2025/5/van-emde-boas): `O(n log log n)`
