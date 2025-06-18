@@ -2,7 +2,7 @@
 title: "Feedback control system"
 date-published: 2025-06-18
 date-drafted: null
-date-modified: null
+date-modified: 2025-06-18
 author:
   - name: "Luke Yoo"
   - email: w.lukeyoo@gmail.com
@@ -26,7 +26,7 @@ H(s) = \frac{C(s)P(s)}{1 + C(s)P(s)Q(s)}
 
 **Block diagram**
 
-```graphviz
+```[graphviz]
 digraph FeedbackControlSystem {
     rankdir=LR;
     
