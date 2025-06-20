@@ -1,8 +1,8 @@
 ---
-title: 'Multithreaded Procedure to compute Fibonacci number'
+title: 'Multithreaded procedure to compute Fibonacci number'
 date-published: 2025-05-11
 date-drafted: null
-date-modified: 2025-05-11
+date-modified: 2025-06-20
 author:
   - name: 'Luke Yoo'
   - email: w.lukeyoo@gmail.com
@@ -12,9 +12,9 @@ tags:
   - 'Multithreading'
 ---
 
-# Multithreaded Procedure to compute Fibonacci number
+# Multithreaded procedure to compute Fibonacci number
 
-## Procedure in pseudocode
+## Procedure
 
 ```pseudo
 P-FIB(n)
@@ -27,7 +27,7 @@ P-FIB(n)
         return x + y
 ```
 
-## The serial version in pseudocode
+## The serial version
 
 ```pseudo
 FIB(n)
